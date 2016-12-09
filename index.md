@@ -1,7 +1,7 @@
 ---
 layout: page-index
 currentPage: home
-title: Welcome
+title: Music, design and stories by Nigel Bunner
 ---
 <div class="home-intro">
 <p>Hello, I'm a <a href="/music.html">musician</a>, <a href="/web-portfolio.html">web developer/designer</a> and <a href="/stories.html">author</a> who also takes the odd <a href="/photos.html">photograph</a>.</p>
