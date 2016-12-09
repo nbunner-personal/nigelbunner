@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="article-header">
+    <h1 class="h2" itemprop="name headline">{{ page.title }}</h1>   
+    {% if site.reading_time %}
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          {% include read-time.html %}
+        </p><!-- /.entry-reading-time -->
+        {% endif %} 
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+  {% if page.categories %}
+  <footer class="post-footer">
+    <p>{% for cat in page.categories %} <a href="/categories/{{ cat }}/">{{ cat }}</a> {% endfor %}</p>
+  </footer>
+  {% endif %}
+</article>
+
+<ul class="nav nav-pills nav-justified">
+  {% if page.previous.url %}
+    <li><a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></li>
+  {% endif %}
+  {% if page.next.url %}
+    <li><a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a></li>
+  {% endif %}
+</il>
+
+

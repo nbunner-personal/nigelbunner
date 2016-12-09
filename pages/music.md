@@ -1,0 +1,17 @@
+---
+layout: page
+title: Music
+permalink: /music.html
+---
+
+<p>I write storytelling songs and perform them on vocals and acoustic guitar under the name Sugardrum. I've been doing this for about 10 years or so and have released a number of EPs and an album. Here's some offical blurb from my press pack:</p>
+
+<blockquote><p>Sugardrum is singer and multi-instrumentalist Nigel Bunner, who writes and performs acoustic stories. To date he has self-released 5 EPs, the three most recent receiving airplay at both BBC 6music and BBC South.</p>
+
+<p>Sugardrum's remarkable fingerpicking style and beautiful vocal harmonies have led to comparisons with Sufjan Stevens and Nick Drake. The acoustic backdrop is enriched with touches of electronica on synthesiser, drum machine and Rhodes & acoustic piano. All  instruments on the record are played by Nigel, with the exception of the cello, bass and some of the backing vocals and percussion parts. He also creates the artwork, website and records & mixes the songs.</p>
+</blockquote>
+
+<p>More information on my music can be found at <a href="http://www.sugardrum.com/" target="_new">www.sugardrum.com</a> and by listening to some tunes on the player below&#8230;</p>
+
+<div class="soundcloud_player"><iframe width="100%" height="380" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F678398&amp;auto_play=false&amp;show_artwork=true&amp;color=A7CBCF"></iframe></div>
+							

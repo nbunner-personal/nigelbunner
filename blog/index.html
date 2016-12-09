@@ -1,0 +1,53 @@
+---
+layout: blog-index
+currentPage: blog
+title: Blog
+---
+
+
+{% for post in paginator.posts %}
+<article class="post">  
+  <header class="article-header"><h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2></header>
+  <div class="post-meta-top">
+    <div class="date">
+      <span>
+        <strong>{{ post.date | date: "%b %-d, %Y" }} | </strong>
+         {% if site.reading_time %}
+              <span class="entry-reading-time">
+                <i class="fa fa-clock-o"></i>
+                {% include read-time.html %}
+              </span><!-- /.entry-reading-time -->
+              {% endif %} 
+      </span>
+    </div>
+  </div>
+  <p>{{ post.content | strip_html | truncatewords:75 }}</p>  
+</article> 
+{% endfor %}
+
+
+  {% if paginator.total_pages > 1 %}
+<ul class="pagination">
+  {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+  {% else %}
+    <li><span aria-hidden="true">&laquo; Prev</span></li>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <li class="active"><span>{{ page }}</span></li>
+    {% elsif page == 1 %}
+      <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+    {% else %}
+      <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+  {% else %}
+    <li><span aria-hidden="true">Next &raquo;</span></li>
+  {% endif %}
+</ul>
+{% endif %}

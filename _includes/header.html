@@ -1,0 +1,22 @@
+<header class="header container" role="banner">
+	<nav role="navigation" class="top-nav-cont col-sm-12">
+		<div class="container">
+			<ul id="menu-top-nav" class="nav top-nav">
+				{% include nav.html %}
+	        </ul>
+		</div>
+	</nav>
+
+	<div id="inner-header" class="col-sm-12">
+
+		<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
+		<p id="logo" class="h1"><a href="{{ site.baseurl }}/" rel="nofollow">{{ site.title }}</a></p>
+					
+		<!-- if you'd like to use the site description you can un-comment it below -->
+		<span>Acoustic storytelling songs</span>
+		
+		<span class="nav_icon mobileNavIcon"><i class="fa fa-bars" id="menuClosed"></i><i class="fa fa-caret-down" id="menuOpen" style="display: none;"></i> Menu</span>
+
+	</div>
+
+</header>
