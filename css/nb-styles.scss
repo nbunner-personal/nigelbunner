@@ -15,9 +15,9 @@ body {
   padding: 0;
 }
 
-#main {background: rgba(255,255,255,0.9); padding-bottom: 60px;}
+#main {background: rgba(255,255,255,0.9); max-width: 900px; padding-bottom: 60px;}
 
-p {font-size: 1.2em; line-height: 1.6em; max-width: 640px;}
+p {font-size: 1.2em; line-height: 1.6em; max-width: 750px;}
 li {font-size: 1.2em; margin-bottom: 8px;}
 
 .home-intro {font-family: "Sorts Mill Goudy", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 1.4em; line-height: 1.7em; margin: 60px 30px;}

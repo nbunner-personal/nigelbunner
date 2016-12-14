@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Music
+currentPage: music
 permalink: /music.html
 ---
 

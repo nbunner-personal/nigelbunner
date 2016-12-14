@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+currentPage: about
 permalink: /about-me.html
 ---
 

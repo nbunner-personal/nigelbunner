@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Web Portfolio
+currentPage: webPortfolio
 permalink: /web-portfolio.html
 ---
 <p>I now have a permanant contract doing web design for a large travel website, so this page has now become more of an archive of some of the projects I have worked on in the past.</p>

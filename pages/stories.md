@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Stories
+currentPage: stories
 permalink: /stories.html
 ---
 

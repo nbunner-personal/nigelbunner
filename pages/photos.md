@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Photos
+currentPage: photos
 permalink: /photos.html
 ---
 

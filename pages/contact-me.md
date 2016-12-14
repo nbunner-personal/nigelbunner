@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact Me
+currentPage: contact
 permalink: /contact-me.html
 ---
 
