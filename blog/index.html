@@ -15,7 +15,14 @@ title: Blog
          {% if site.reading_time %}
               <span class="entry-reading-time">
                 <i class="fa fa-clock-o"></i>
-                {% include read-time.html %}
+                <span class="reading-time" title="Estimated read time">
+                  {% assign words = post.content | number_of_words %}
+                  {% if words < 360 %}
+                    1 min read
+                  {% else %}
+                    {{ words | divided_by:180 }} mins read
+                  {% endif %}
+                </span>
               </span><!-- /.entry-reading-time -->
               {% endif %} 
       </span>
