@@ -1,7 +1,7 @@
 ---
 id: 183
 title: Day 2, grow your own garden tools..
-date: 2011-07-08T23:19:10+00:00
+date: 2011-07-08 23:19:10
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=183

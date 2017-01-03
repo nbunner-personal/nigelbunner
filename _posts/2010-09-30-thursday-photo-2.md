@@ -1,7 +1,7 @@
 ---
 id: 93
 title: Thursday Photo
-date: 2010-09-30T23:28:55+00:00
+date: 2010-09-30 23:28:55
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=93

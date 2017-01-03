@@ -1,7 +1,7 @@
 ---
 id: 98
 title: 'Recent work&#8230;'
-date: 2011-01-26T18:57:09+00:00
+date: 2011-01-26 18:57:09
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=98

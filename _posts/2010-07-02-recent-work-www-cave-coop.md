@@ -1,7 +1,7 @@
 ---
 id: 63
 title: 'Recent Work: www.cave.coop'
-date: 2010-07-02T00:09:37+00:00
+date: 2010-07-02 00:09:37
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=63

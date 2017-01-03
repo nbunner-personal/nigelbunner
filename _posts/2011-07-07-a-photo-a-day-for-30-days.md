@@ -1,7 +1,7 @@
 ---
 id: 167
 title: Day 1, a photo a day, for 30 days..
-date: 2011-07-07T23:42:01+00:00
+date: 2011-07-07 23:42:01
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=167

@@ -1,7 +1,7 @@
 ---
 id: 139
 title: Sugardrum on Bandcamp
-date: 2011-03-10T11:23:56+00:00
+date: 2011-03-10 11:23:56
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=139

@@ -1,7 +1,7 @@
 ---
 id: 196
 title: Day 4, fresh yummy home made bread..
-date: 2011-07-10T22:25:46+00:00
+date: 2011-07-10 22:25:46
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=196

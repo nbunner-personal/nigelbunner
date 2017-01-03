@@ -1,7 +1,7 @@
 ---
 id: 220
 title: Day 14, fish lamp
-date: 2011-07-20T21:54:41+00:00
+date: 2011-07-20 21:54:41
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/2011/07/20/day-14-fish-lamp/

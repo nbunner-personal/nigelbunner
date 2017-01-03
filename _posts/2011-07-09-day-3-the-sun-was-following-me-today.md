@@ -1,7 +1,7 @@
 ---
 id: 190
 title: Day 3, the Sun was following me today..
-date: 2011-07-09T23:26:36+00:00
+date: 2011-07-09 23:26:36
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=190

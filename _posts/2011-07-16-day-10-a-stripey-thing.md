@@ -1,7 +1,7 @@
 ---
 id: 215
 title: Day 10, A Stripey thing
-date: 2011-07-16T20:48:40+00:00
+date: 2011-07-16 20:48:40
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/2011/07/16/day-10-a-stripey-thing/

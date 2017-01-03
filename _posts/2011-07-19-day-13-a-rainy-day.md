@@ -1,7 +1,7 @@
 ---
 id: 219
 title: 'Day 13, a rainy day&#8230;'
-date: 2011-07-19T21:58:01+00:00
+date: 2011-07-19 21:58:01
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/2011/07/19/day-13-a-rainy-day/

@@ -1,7 +1,7 @@
 ---
 id: 17
 title: Free sugardrum EPs to download
-date: 2010-05-14T13:45:06+00:00
+date: 2010-05-14 13:45:06
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=17

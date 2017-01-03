@@ -1,7 +1,7 @@
 ---
 id: 211
 title: Day 9, a Cat in a box
-date: 2011-07-15T23:57:42+00:00
+date: 2011-07-15 23:57:42
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/2011/07/15/day-9-a-cat-in-a-box/

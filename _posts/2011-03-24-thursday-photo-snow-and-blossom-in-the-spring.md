@@ -1,7 +1,7 @@
 ---
 id: 151
 title: 'Thursday Photo &#8211; Snow and Blossom in the Spring'
-date: 2011-03-24T10:54:45+00:00
+date: 2011-03-24 10:54:45
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=151

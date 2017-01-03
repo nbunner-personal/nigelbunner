@@ -1,7 +1,7 @@
 ---
 id: 119
 title: iPad DIY book style case
-date: 2011-02-28T00:18:48+00:00
+date: 2011-02-28 00:18:48
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=119

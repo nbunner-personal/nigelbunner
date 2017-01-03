@@ -1,7 +1,7 @@
 ---
 id: 201
 title: Day 5, a small rainbow entered the room..
-date: 2011-07-11T23:13:48+00:00
+date: 2011-07-11 23:13:48
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=201

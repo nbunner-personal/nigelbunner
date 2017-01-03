@@ -1,7 +1,7 @@
 ---
 id: 70
 title: Glastonbury Photos
-date: 2010-07-04T22:59:03+00:00
+date: 2010-07-04 22:59:03
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=70

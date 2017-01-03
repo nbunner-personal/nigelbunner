@@ -1,7 +1,7 @@
 ---
 id: 210
 title: Day 8, a Fox by the Thames
-date: 2011-07-14T23:27:27+00:00
+date: 2011-07-14 23:27:27
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/2011/07/14/day-8-a-fox-by-the-thames/

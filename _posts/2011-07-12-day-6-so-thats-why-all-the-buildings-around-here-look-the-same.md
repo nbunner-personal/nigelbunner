@@ -1,7 +1,7 @@
 ---
 id: 204
 title: 'Day 6, so that&#8217;s why all the buildings around here look the same..'
-date: 2011-07-12T21:36:24+00:00
+date: 2011-07-12 21:36:24
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/2011/07/12/day-6-so-thats-why-all-the-buildings-around-here-look-the-same/

@@ -1,7 +1,7 @@
 ---
 id: 217
 title: Day 11, Rhodes piano
-date: 2011-07-17T22:00:50+00:00
+date: 2011-07-17 22:00:50
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/2011/07/17/day-11-rhodes-piano/

@@ -1,7 +1,7 @@
 ---
 id: 11
 title: Transition Towns
-date: 2010-05-10T23:38:57+00:00
+date: 2010-05-10 23:38:57
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=11

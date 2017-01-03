@@ -1,7 +1,7 @@
 ---
 id: 39
 title: 'Recent Work: www.marthatilston.co.uk'
-date: 2010-06-07T23:08:24+00:00
+date: 2010-06-07 23:08:24
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=39

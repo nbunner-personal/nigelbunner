@@ -1,7 +1,7 @@
 ---
 id: 160
 title: Well done sky!
-date: 2011-06-26T22:44:38+00:00
+date: 2011-06-26 22:44:38
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=160

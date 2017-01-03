@@ -1,7 +1,7 @@
 ---
 id: 57
 title: 'Thursday Photo&#8230;'
-date: 2010-06-10T17:55:50+00:00
+date: 2010-06-10 17:55:50
 author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=57
