@@ -4,24 +4,28 @@
 body {
   background-attachment: fixed;
   background-color: #A2C9F0;
-  background-image: url(/img/bird-in-sky-back.jpg);
+  background-image: url(/img/bird-in-sky-back-2.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  color: darken(#80878c, 10%);
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;  
   margin: 0;
   padding: 0;
 }
 
+a:link, a:visited {color: #6293AB;}
+a:hover {color: lighten(#6293AB, 5%);}
+
 #main {background: rgba(255,255,255,0.9); max-width: 900px; padding-bottom: 60px;}
 
-p {font-size: 1.2em; line-height: 1.6em; max-width: 750px;}
+p {font-size: 1.3em; line-height: 1.7em; max-width: 750px;}
 li {font-size: 1.2em; margin-bottom: 8px;}
 
-.home-intro {font-family: "Sorts Mill Goudy", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 1.4em; line-height: 1.7em; margin: 60px 30px;}
-
+.home-intro {color: darken(#AEAEAE, 5%); font-family: "Sorts Mill Goudy", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 1.4em; line-height: 1.7em; margin: 60px 30px;}
+.date {color: #AEAEAE; font-family: "Sorts Mill Goudy", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 1.1em;}
 .portfolio .portfolio_thumbnail {
   height: 204px;
   margin-bottom: 20px;
@@ -125,10 +129,11 @@ li {font-size: 1.2em; margin-bottom: 8px;}
   }
   .post .article-header h1,
   .post .article-header h2 {
-    background: #eef2f3;
-    border-left: 8px solid #6293ab;
+    background: #F8F8F8;
+    border-left: 8px solid #6293ab;    
     margin-left: -40px;
     padding: 10px 28px 5px;
+    a:link, a:visited {color: #6293AB;}
   }
   .intro_text {
     margin: 0 0 60px;
@@ -175,6 +180,7 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 .main-footer, .main-header {
   background: rgba(255,255,255,0.9); 
   margin-top: 30px; margin-bottom: 15px;
+  max-width: 900px;
 }
 
 .h_post {margin: 60px 30px;}
