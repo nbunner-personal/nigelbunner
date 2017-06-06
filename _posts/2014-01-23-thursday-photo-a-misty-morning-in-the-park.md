@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=348
 permalink: /blog/2014/01/23/thursday-photo-a-misty-morning-in-the-park/
+tags: [photos]
 ---
 <!--nextpage--> Here&#8217;s a photo from my morning run the other day on a particularly misty morning&#8230;
 

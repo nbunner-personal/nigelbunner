@@ -3,6 +3,7 @@ layout: post
 title: Moving From Wordpress To Jekyll
 date: 2016-12-09 23:17
 permalink: /blog/2016/12/09/moving-from-wordpress-to-jekyll/
+tags: [coding,jekyll]
 ---
 
 Wow, it's been exactly a year since I last updated this website. Much has happened since then, including changing how this site is created. It used to be powered by Wordpress but now I'm using a static website generator called Jekyll.

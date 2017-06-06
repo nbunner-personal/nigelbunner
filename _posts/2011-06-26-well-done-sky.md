@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=160
 permalink: /blog/2011/06/26/well-done-sky/
+tags: [photos]
 ---
 Today was such a beautiful looking day that it made you want to look up at the sky and say,
 

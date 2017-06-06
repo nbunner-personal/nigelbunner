@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=167
 permalink: /blog/2011/07/07/a-photo-a-day-for-30-days/
+tags: [photos]
 ---
 I watched a few nice <a title="TED" href="http://www.ted.com/" target="_blank">TED</a> lectures the other day, one of which has inspired me to embark on a mini project. It was a video presented by guy called Matt Cutts who had started trying out various new things for 30 days at a time, the title of the talk being <a title="TED: Try Something New for 30 days" href="http://www.ted.com/talks/matt_cutts_try_something_new_for_30_days.html" target="_blank">Try something new for 30 days.</a>
 

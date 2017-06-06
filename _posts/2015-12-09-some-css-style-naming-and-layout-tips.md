@@ -4,8 +4,9 @@ title: Some CSS style naming and layout tips
 date: 2015-12-09 18:11:58 +00:00
 author: Nigel
 layout: post
-guid: http://www.nigelbunner.co.uk/?p=395
+guide: http://www.nigelbunner.co.uk/?p=395
 permalink: /blog/2015/12/09/some-css-style-naming-and-layout-tips/
+tags: [css, coding]
 ---
 After doing CSS development work for a number of years there&#8217;s a few little tips that I&#8217;ve picked up that I thought it might be helpful to pass on.
 

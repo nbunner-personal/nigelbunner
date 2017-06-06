@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/2011/07/20/day-14-fish-lamp/
 permalink: /blog/2011/07/20/day-14-fish-lamp/
+tags: [photos]
 ---
 [<img src="http://farm7.static.flickr.com/6004/5958565641_92f7b715a3_z.jpg" width="640" height="480" alt="Fish Lamp" />](http://www.flickr.com/photos/icklephotos/5958565641/ "Fish Lamp by icle fotos, on Flickr")
 

@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=270
 permalink: /blog/2012/01/12/thursday-photo-gas-lamp-near-green-park/
+tags: [photos]
 ---
 I took this whilst on a London Walk around Green Park. 
 

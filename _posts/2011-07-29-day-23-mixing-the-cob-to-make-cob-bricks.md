@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=233
 permalink: /blog/2011/07/29/day-23-mixing-the-cob-to-make-cob-bricks/
+tags: [photos,travel]
 ---
 [<img src="http://farm7.static.flickr.com/6027/6009167069_a59674c725_z.jpg" alt="Mixing the cob to make cob bricks" width="640" height="480" />](http://www.flickr.com/photos/icklephotos/6009167069/ "Mixing the cob to make cob bricks by icle fotos, on Flickr") 
 

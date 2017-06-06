@@ -10,6 +10,7 @@ excerpt: |
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=305
 permalink: /blog/2012/06/09/a-story-about-trains-in-india/
+tags: [travel]
 ---
 Trains in India are long. So long in fact that it&#8217;s a shame they don&#8217;t use steam trains as a platform shrouded in steamy mist would look great for these massively long trains to slowly disappear into.
 

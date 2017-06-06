@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=57
 permalink: /blog/2010/06/10/thursday-photo/
+tags: [photos]
 ---
 <p style="text-align: center;">
   <div id="attachment_58" style="width: 610px" class="wp-caption aligncenter">

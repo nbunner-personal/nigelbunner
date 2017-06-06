@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=309
 permalink: /blog/2012/10/17/photos-from-scotland/
+tags: [photos]
 ---
 I recently went on a lovely Hillwalking and Meditation retreat, deep in the highlands of Scotland. The retreat is called <a title="Dhanakosa Buddhist Meditation and Yoga Retreat Centre" href="http://www.dhanakosa.com" target="_blank">Dhanakosa</a> and is set next to a beautiful tranquill loch surrounded on all sides by mountains. It was a wonderful week &#8211; I did lots of walking and mediation as you&#8217;d expect but also some running and photograph taking too.
 

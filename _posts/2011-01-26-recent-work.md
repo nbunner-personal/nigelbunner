@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=98
 permalink: /blog/2011/01/26/recent-work/
+tags: [webdesign]
 ---
 I&#8217;ve been fortunate to be busy with some regular web work for a well known travel client over the past few months so not had much time or the need to do any freelance projects, hence the lack of updates on here.
 

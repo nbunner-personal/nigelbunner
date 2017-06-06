@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=119
 permalink: /blog/2011/02/28/ipad-diy-book-style-case/
+tags: [tips]
 ---
 I&#8217;ve been lucky to own an iPad for a months now and it&#8217;s proved very useful for various musical and web related things. When I first got it I had a look around the net for a notebook/moleskin or book style case, and eventually settled on one made by <a title="Treegloo products" href="http://treegloo.com/" target="_blank">Treegloo</a>. It worked well at protecting the iPad and is extremely well constructed but I always felt it was a bit bulky and after looking on the net came to the conclusion that this was a common feature of a lot of these cases i.e. those with a wooden frame surrounded by a book jacket cover such as those from <a title="Portenzo - handmade iPad cases" href="http://shop.portenzo.com/" target="_blank">Portenzo</a> and <a title="iPad Cases by DODOCase" href="http://www.dodocase.com/" target="_blank">DodoCase</a>.
 

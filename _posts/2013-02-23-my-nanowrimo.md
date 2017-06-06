@@ -10,6 +10,7 @@ excerpt: |
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=326
 permalink: /blog/2013/02/23/my-nanowrimo/
+tags: [writing]
 ---
 Last November I took part in a writing event that thousands of people across the globe were sharing in, [NaNoWriMo](http://www.nanowrimo.org "National Novel Writing Month"). Every day I would sit down in front of my laptop in the small moments of free time I could find and spend as long as I could writing a story called Postcards. In the evenings this was often for as long as I could stay awake or could force my addled brain to work for.
 

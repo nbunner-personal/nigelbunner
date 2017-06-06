@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=345
 permalink: /blog/2014/03/25/fixing-race-numbers-without-using-pins/
+tags: [running, tips]
 ---
 I&#8217;ve taken part in a couple of races recently and didn&#8217;t want to risk making holes in my top by fixing my race number to it with safety pins.
 

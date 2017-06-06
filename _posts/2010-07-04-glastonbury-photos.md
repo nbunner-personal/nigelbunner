@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=70
 permalink: /blog/2010/07/04/glastonbury-photos/
+tags: [music,photos]
 ---
 I&#8217;ve just uploaded a load of photos to my flickr photostream from this year&#8217;s Glastonbury Festival&#8230;
 

@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=63
 permalink: /blog/2010/07/02/recent-work-www-cave-coop/
+tags: [webdesign]
 ---
 The <a title="The Cave Coop" href="http://www.cave.coop" target="_blank">Cave Co-operative</a> specialise in <a title="The Cave Coop" href="http://www.cave.coop" target="_blank">Sustainable Architecture</a>. They came up with some nice design ideas for the site such as a general style guide for the colour and typography and prepared most of the main images themselves. I helped them with the overal layout, coding the site and putting all our ideas together.
 

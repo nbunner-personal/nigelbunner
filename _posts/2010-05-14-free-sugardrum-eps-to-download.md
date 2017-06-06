@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=17
 permalink: /blog/2010/05/14/free-sugardrum-eps-to-download/
+tags: [music]
 ---
 <img class="alignleft size-full wp-image-16" style="float: left; margin: 10px;" title="sugardrum-whereoncewereroads-cover-small" src="/img/wp-blog/2010/05/sugardrum-whereoncewereroads-cover-small.jpg" alt="sugardrum - where once were roads" width="150" height="150" />
   

@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign post = page %}
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="article-header">
@@ -16,11 +18,23 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-  {% if page.categories %}
-  <footer class="post-footer">
-    <p>{% for cat in page.categories %} <a href="/categories/{{ cat }}/">{{ cat }}</a> {% endfor %}</p>
-  </footer>
+  
+  {% if post.tags.size > 0 %}
+    {% capture tags_content %}<i class="fa fa-tag{% if post.tags.size > 1 %}s{% endif %}"></i>: {% endcapture %}
+    {% for post_tag in post.tags %}
+      {% assign tag = site.my_tags | where: "slug", post_tag %}
+      {% if tag %}
+        {% assign tag = tag[0] %}
+        {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+        {% assign tags_content = tags_content_temp %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
+
+  <footer class="post-footer">
+    <p id="post-meta">{{ tags_content }}</p>
+  </footer>
+  
 </article>
 
 <ul class="nav nav-pills nav-justified">

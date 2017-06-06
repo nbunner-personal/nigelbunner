@@ -23,15 +23,33 @@ github_username:  nbunner
 
 reading_time: true
 
+
+# Outputting
+permalink: /blog/:title/
 paginate: 5
 paginate_path: "/blog/page/:num/"
 
 highlighter: rouge
 
+collections:
+  my_tags:
+    output: true
+    permalink: /blog/tag/:name/
+
+defaults:
+   -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: blog_by_tag
+
+
 # Build settings
 sass:
   style: compressed
 markdown: kramdown
+highlighter: rouge
 gems:
   - jekyll-feed
   - jekyll-paginate

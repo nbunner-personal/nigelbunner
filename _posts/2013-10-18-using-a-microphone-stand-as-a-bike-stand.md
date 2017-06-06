@@ -10,6 +10,7 @@ shareaholic_disable_share_buttons:
   - "0"
 shareaholic_disable_open_graph_tags:
   - "0"
+tags: [tips]
 ---
 
 <img class="alignnone size-full wp-image-338" alt="diy-bike-stand" src="/img/wp-blog/2013/04/diy-bike-stand.jpg" width="690" height="518" srcset="/img/wp-blog/2013/04/diy-bike-stand.jpg 690w, /img/wp-blog/2013/04/diy-bike-stand-300x225.jpg 300w" sizes="(max-width: 690px) 100vw, 690px" /> 

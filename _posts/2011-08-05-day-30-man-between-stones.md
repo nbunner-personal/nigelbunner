@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=256
 permalink: /blog/2011/08/05/day-30-man-between-stones/
+tags: [photos]
 ---
 [<img src="http://farm7.static.flickr.com/6071/6023212102_5363fcd8ee_z.jpg" alt="Man between stones" width="480" height="640" />](http://www.flickr.com/photos/icklephotos/6023212102/ "Man between stones by icle fotos, on Flickr") 
 

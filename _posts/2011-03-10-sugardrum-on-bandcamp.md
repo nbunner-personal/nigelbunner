@@ -6,6 +6,7 @@ author: Nigel
 layout: post
 guid: http://www.nigelbunner.co.uk/?p=139
 permalink: /blog/2011/03/10/sugardrum-on-bandcamp/
+tags: [music]
 ---
 <p style="text-align: center;">
   <a title="Sugardrum on Bandcamp" href="/img/wp-blog/2011/03/bandcamp-blogphoto.jpg" target="_blank"><img class="aligncenter size-full wp-image-141" title="bandcamp-blogphoto" src="/img/wp-blog/2011/03/bandcamp-blogphoto.jpg" alt="Sugardrum on Bandcamp" width="600" height="203" srcset="/img/wp-blog/2011/03/bandcamp-blogphoto.jpg 600w, /img/wp-blog/2011/03/bandcamp-blogphoto-300x101.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></a>
