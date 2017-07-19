@@ -2,7 +2,7 @@
 layout: post
 title: A simple way to lazy load embedded Youtube videos
 date: 2017-06-06 20:55
-tags: [coding,css,jquery, youtube]
+tags: [coding,css,jquery,music,youtube]
 ---
 Like most musicians I use embedded YouTube videos on my website. They look great, but can really slow the page down. This is especially true if you have more than one of them and is due to the [browser](/glossary/glossary_Web-Browser.html) having to download extra content from another [server](/glossary/glossary_Server.html). Not only can this affect the experience for the user but it could also have an affect on your page ranking on Google. 
 
