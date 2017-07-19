@@ -61,11 +61,11 @@ All of these should hopefully save you time setting up and maintaining your onli
 ## Bandcamp
 When I first created a website for [Sugardrum](http://www.sugardrum.com) the only way to add music to your website was to create and upload the mp3s yourself, then add some code such as a Flash based music player so people could listen to them. Before doing this the mp3s had to have their ID3 tags and file names set correctly. You also had to attempt to hide the actual location of the mp3s in case someone tried to bypass the online player and download the tracks for free. 
 
-On top of this ff you wanted to sell your music on your site you either added some PayPal buttons or setup your own shopping cart software. I tried both of these and even created my own shopping cart software which was used on a couple of other sites for a while.
+On top of this if you wanted to sell your music on your site you either added some PayPal buttons or setup your own shopping cart software. I tried both of these and even created my own shopping cart software which was used on a couple of other sites for a while.
 
 Nowadays I don't bother with any of this as I just use [Bandcamp](http://shop.sugardrum.com/). 
 
-This is a great way to sell your music online. They have HTML5 players that you can easily style and embed into your own website. You also get your own set of pages on their site where you can market and sell your music. These pages can be styled with images and colours to match your own branding. Once you've setup a new album or EP and uploaded the tracks in WAV format they take care of all the file conversion into other formats for you and tracks have the correct ID3 information added based on the album you add them to. 
+This is a great way to sell your music online. They have HTML5 players that you can easily style and embed onto your own website. You also get your own set of pages on their site where you can market and sell your music. These pages can be styled with images and colours to match your own branding. Once you've setup a new album or EP and uploaded the tracks in WAV format they take care of all the file conversion into other formats for you and the tracks have the correct ID3 information added based on the album you add them to. 
 
 Users are given the option of downloading in MP3, Ogg and WAV formats and they even give you the option to sell CDs or other physical merchandise on their site too. They send you an email when a purchase has been made which, if it's a physical item, you post yourself. 
 
@@ -87,7 +87,7 @@ Soundcloud have a free and a pro plan, the latter giving you more recording time
 
 
 ## IFTTT 
-The best kind of websites are those that update themselves using data from other sites. I use the If This Then That [(IFTTT)](https://ifttt.com/) service to link my Instagram and Twitter accounts together. Now, whenever I post a picture to Instagram a tweet of the photo is automatically created in my Twitter account. You can do so much more with IFTTT, linking thousands of different services together and all for free. 
+The best kind of websites are those that update themselves using data from other sites. I use the If This Then That [(IFTTT)](https://ifttt.com/) service to link my [Instagram](http://instagram.com/sugardrum) and Twitter accounts together. Now, whenever I post a picture to Instagram a tweet of the photo is automatically created in my Twitter account. You can do so much more with IFTTT, linking thousands of different services together and all for free. 
 
 
 ## Buffer
@@ -113,7 +113,7 @@ The reason why I haven't included iTunes, Spotify etc is that this UK website al
 
 
 ## YouTube
-More people are listening to music on YouTube than ever before. I usually upload my music videos to both [YouTube](http://www.youtube.com/user/sugardrum) and Vimeo but have had more success promoting them on YouTube. Recording live videos of unique cover versions and uploading them to YouTube can be a great promotional tool. My Smiths cover mentioned earlier has become one of the top 3 acoustic covers of the song on there. 
+More people are listening to music on YouTube than ever before. I usually upload my music videos to both [YouTube](http://www.youtube.com/user/sugardrum) and Vimeo but have had more success promoting them on YouTube. Recording live videos of unique cover versions and uploading them to YouTube can be a great promotional tool. My Smiths cover mentioned earlier has become one of the top 3 most listened to acoustic covers of the song on there. 
 
 <div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/jt9BeiRDwJI" frameborder="0" allowfullscreen></iframe></div>
 
