@@ -4,8 +4,7 @@ currentPage: home
 title: Music, design and stories by Nigel Bunner
 ---
 <div class="home-intro">
-<div>Hello, I'm a <a href="/music.html">musician</a>, <a href="/web-portfolio.html">web developer/designer</a> and <a href="/stories.html">author</a> who also takes the odd <a href="/photos.html">photograph</a>.</div>
-<div>I sometimes write the odd blog post too&hellip;</div>
+<div>Hello, I'm a <a href="/music.html">musician</a>, <a href="/web-portfolio.html">web developer/designer</a> and <a href="/stories.html">author</a> who also takes the occasional <a href="/photos.html">photograph</a>.</div>
 </div>	
 
 
