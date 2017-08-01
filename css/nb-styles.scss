@@ -29,8 +29,8 @@ p {
 }
 li {font-size: 1.2em; margin-bottom: 8px;}
 
-.home-intro {border-bottom: 4px solid #F3F3F3; color: darken(#AEAEAE, 15%); font-family: "Sorts Mill Goudy", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 3rem; line-height: 1.7em; margin-bottom: 30px; padding: 30px; text-align: center;}
-.date {color: #AEAEAE; font-family: "Sorts Mill Goudy", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 1.1em;}
+.home-intro {border-bottom: 4px solid #F3F3F3; color: darken(#AEAEAE, 15%); font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 3rem; line-height: 1.7em; margin-bottom: 30px; padding: 30px; text-align: center;}
+.date {color: #AEAEAE; font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 1.1em;}
 .portfolio .portfolio_thumbnail {
   height: 204px;
   margin-bottom: 20px;
@@ -143,7 +143,7 @@ li {font-size: 1.2em; margin-bottom: 8px;}
     border-left: 2px solid #6293ab;    
     margin-left: -17px;
     padding: 10px 15px 5px;
-    a:link, a:visited {color: #6293AB;}
+    // a:link, a:visited {color: #6293AB;}
   }
   .intro_text {
     margin: 0 0 60px;
@@ -178,7 +178,7 @@ li {font-size: 1.2em; margin-bottom: 8px;}
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   color: #262F33;
-font-family: "Sorts Mill Goudy", "Georgia", Cambria, Times New Roman, Times, serif;
+font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif;
 text-rendering: optimizelegibility;
 font-weight: 400;
 }
@@ -309,3 +309,4 @@ pre code {
   margin-bottom: 30px;
 }
 
+.nav li {margin: 8px 0;}
