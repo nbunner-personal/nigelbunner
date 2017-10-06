@@ -5,36 +5,47 @@
 
 <body class="home page">
 
-		<div id="container">
+		<div class="container">
 
-			<header class="header main-header col-xs-12" role="banner">
-			<nav role="navigation" class="">{% include top-nav.html %}</nav>
-			</header>
+			<aside>
+				<span class="nav--icon" id="mobileNavIcon">
+					<span id="menuClosed"><i class="fa fa-bars"></i> Menu</span>
+					<span id="menuOpen" class="navHidden"><i class="fa fa-caret-down"></i></span>
+				</span>
+				<nav role="navigation" class="nav nav--top navHidden" id="menuTopNav">{% include top-nav.html %}</nav>
+				<p class="page-lead">Hello, I'm a <a href="/music.html">musician</a>, <a href="/web-portfolio.html">web developer / designer</a> and <a href="/stories.html">author</a> who also takes the occasional <a href="/photos.html">photograph</a>.</p>
+			</aside>
 
-			<div id="content">
+			<main role="main">
+				
+				{{ content }}
+				
+			</main>
 
-				<div id="inner-content" class="wrap clearfix">
-					<div id="main" class="col-xs-12 clearfix">{{ content }}</div>
-				</div>
-
-			</div>
-
-			<footer class="footer main-footer col-xs-12" role="contentinfo">
+			<footer class="footer main-footer" role="contentinfo">
 
 				<div id="inner-footer" class="wrap clearfix">
 
-					<nav role="navigation" class="">{% include nav.html %}</nav>
+					<nav role="navigation" class="nav nav--bot">{% include nav.html %}</nav>
 
-					<p class="source-org copyright">&copy; 2017 - {{ site.description }}</p>
+					<p class="source-org copyright">&copy; {{ 'now' | date: "%Y" }} - {{ site.description }}</p>
 
 				</div>
 
 			</footer>
-
+			
 		</div>
 
-<script type='text/javascript' src='/js/scripts.js'></script>	
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript">			
+			let navTop = document.getElementById("menuTopNav");
+			let navClosedIcon = document.getElementById("menuClosed");
+			let navOpenIcon = document.getElementById("menuOpen");
+			document.getElementById('mobileNavIcon').onclick = function(){
+			      navTop.classList.toggle("navHidden");
+			      navClosedIcon.classList.toggle("navHidden");
+			      navOpenIcon.classList.toggle("navHidden");
+			}			
+		</script>
 		
 	</body>
 

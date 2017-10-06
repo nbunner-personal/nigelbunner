@@ -1,0 +1,53 @@
+.nav--top {
+	
+	max-width: 440px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 44px;
+	width: 55%;
+	z-index: 1000;
+	li a {background: #fff; border-bottom: 1px solid $border-color; display: block; padding: 4px 12px; text-decoration: none;}
+
+}
+
+.nav--icon {cursor: pointer; display: block; float: right; margin: 1px 15px 0 0; font-size: 1.6em;
+
+
+}
+
+.navHidden {display: none;}
+
+.main-header {
+	overflow: hidden;
+	
+}
+
+.nav--bot {
+	text-align: center;
+	li, li a {display: inline-block;}
+	li a {margin: 0 6px;}
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+	nav {
+		margin: 12px auto; overflow: hidden; width: 90%;		
+		
+		// a:hover {background: }
+		// & > li {float: left;}
+	}
+	.nav--top.navHidden {display: block;}
+	.nav--top {
+		 max-width: auto; position: relative; top: 0; width: auto;
+		li {
+			margin: 4px 12px; text-align: right;
+			a {display: inline-block; margin: 2px auto; padding: 4px 12px;}
+		}
+	}
+	.nav--icon {display: none;}
+
+
+}

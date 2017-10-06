@@ -1,0 +1,26 @@
+.glossary_list {
+  border-top: 1px solid #DEE2E6;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.glossary_list a {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 8px;
+}
+.glossary_list a:link,
+.glossary_list a:visited {
+  background: #4B83A8;
+  color: #EFE7E2;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+}
+.glossary_list a:hover,
+.glossary_list a:visited:hover,
+.glossary_list a:focus,
+.glossary_list a:visited:focus {
+  background: #5E94B8;
+  color: #fff;
+}

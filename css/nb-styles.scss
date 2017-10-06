@@ -1,87 +1,51 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+@import "variables";
+@import "reset";
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
+
+@import "typography";
+@import "navigation";
+@import "pagination";
+@import "layout";
+@import "portfolio";
+@import "glossary";
+
 body {
-  background-attachment: fixed;
-  background-color: #A2C9F0;
-  background-image: url(/img/bird-in-sky-back-2.jpg);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  color: darken(#80878c, 10%);
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;  
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
+  // background-attachment: fixed;  
+  // background-image: url(/img/bird-in-sky-back-2.jpg);
+  // background-position: bottom 18em;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // -moz-background-size: cover;
+  // -webkit-background-size: cover;
+  // color: darken(#80878c, 10%);  
+  // font-size: 16px;
+  // margin: 0;
+  // padding: 0;
 }
 
 a:link, a:visited {color: #2294F6;}
 a:hover {color: lighten(#2294F6, 5%);}
 
-#container {margin: 0 auto; max-width: 900px; width: 100%;}
-#main {background: rgba(255,255,255,0.9); clear: both; max-width: 900px; padding-bottom: 60px;}
 
 p {
-  font-size: 2rem; line-height: 3.3rem; margin: 0 0 2.8rem; max-width: 750px;
+  max-width: 750px; // font-size: 2rem; line-height: 3.3rem; margin: 0 0 2.8rem;
   a {text-decoration: underline;}
 }
 li {font-size: 1.2em; margin-bottom: 8px;}
 
-.home-intro {border-bottom: 4px solid #F3F3F3; color: darken(#AEAEAE, 15%); font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 3rem; line-height: 1.7em; margin-bottom: 30px; padding: 30px; text-align: center;}
+.home-intro {
+  border-bottom: 4px solid #F3F3F3; color: darken(#AEAEAE, 15%); font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 3rem; line-height: 1.7em; margin-bottom: 30px; padding: 30px; text-align: center;
+  p {font-size: 2rem;}
+}
 .date {color: #AEAEAE; font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 1.1em;}
-.portfolio .portfolio_thumbnail {
-  height: 204px;
-  margin-bottom: 20px;
-  max-width: 385px;
-}
-.portfolio_item {
-  border-top: 1px solid #DEE2E6;
-  clear: left;
-  margin: 20px 0 10px;
-  padding-top: 30px;
-}
-.portfolio h3 {
-  margin: 0;
-}
-.portfolio h3 + p {
-  margin-top: 0;
-}
-.portfolio h2 + .portfolio_item {
-  border-top: none;
-  margin-top: 0;
-  padding-top: 0;
-}
-.portfolio img {
-  border: 0;
-}
-.glossary_list {
-  border-top: 1px solid #DEE2E6;
-  margin-top: 30px;
-  padding-top: 30px;
-}
-.glossary_list a {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 5px;
-  padding: 5px 8px;
-}
-.glossary_list a:link,
-.glossary_list a:visited {
-  background: #4B83A8;
-  color: #EFE7E2;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
-}
-.glossary_list a:hover,
-.glossary_list a:visited:hover,
-.glossary_list a:focus,
-.glossary_list a:visited:focus {
-  background: #5E94B8;
-  color: #fff;
-}
+
+
 .entry-content h3,
 .entry-content .h3 {
   color: #747E83;
@@ -96,13 +60,13 @@ li {font-size: 1.2em; margin-bottom: 8px;}
 .post-header {
   margin-bottom: 30px; }
 
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1; }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
+// .post-title {
+//   font-size: 42px;
+//   letter-spacing: -1px;
+//   line-height: 1; }
+//   @media screen and (max-width: 800px) {
+//     .post-title {
+//       font-size: 36px; } }
 
 .post-content {
   margin-bottom: 30px; }
@@ -140,9 +104,10 @@ li {font-size: 1.2em; margin-bottom: 8px;}
   .post .article-header h1,
   .post .article-header h2 {
     // background: #F8F8F8;
-    border-left: 2px solid #6293ab;    
-    margin-left: -17px;
-    padding: 10px 15px 5px;
+    // border-left: 2px solid #6293ab;    
+    // background: #fff;
+    margin-left: -15px;
+    padding: 8px 15px;
     // a:link, a:visited {color: #6293AB;}
   }
   .intro_text {
@@ -176,19 +141,10 @@ li {font-size: 1.2em; margin-bottom: 8px;}
 // padding: 15px;
 // }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  color: #262F33;
-font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif;
-text-rendering: optimizelegibility;
-font-weight: 400;
-}
 
-h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  margin-top: 60px;
-}
 
 .main-footer, .main-header {
-  background: rgba(255,255,255,0.9); 
+  // background: rgba(255,255,255,0.9); 
   margin-top: 30px; margin-bottom: 15px;
   max-width: 900px;
 }
@@ -196,27 +152,7 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 .h_post {margin: 60px 30px;}
 
 
-pre, code {
-  background: #242A3A;
-  color: #cccccc;
-  font-size: 1.5rem;
-}
-code {
-  word-break: break-all;
-  white-space: normal;
-}
-pre { // only apply for code blocks
-  overflow: auto;
-  padding: 8px;
-}
-pre code {
-  white-space: pre;
-  overflow: auto;
-  word-wrap: normal;
-  span {
-    word-break: break-all;
-  }
-}
+
 
 .highlight .hll { background-color: #272822; }
 .highlight .c { color: #75715e } /* Comment */
@@ -309,4 +245,4 @@ pre code {
   margin-bottom: 30px;
 }
 
-.nav li {margin: 8px 0;}
+// .nav li {margin: 8px 0;}

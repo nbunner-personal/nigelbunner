@@ -1,0 +1,25 @@
+.portfolio .portfolio_thumbnail {
+  height: 204px;
+  margin-bottom: 20px;
+  max-width: 385px;
+}
+.portfolio_item {
+  border-top: 1px solid #DEE2E6;
+  clear: left;
+  margin: 20px 0 10px;
+  padding-top: 30px;
+}
+.portfolio h3 {
+  margin: 0;
+}
+.portfolio h3 + p {
+  margin-top: 0;
+}
+.portfolio h2 + .portfolio_item {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+.portfolio img {
+  border: 0;
+}

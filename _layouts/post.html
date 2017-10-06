@@ -15,9 +15,9 @@ layout: default
         {% endif %} 
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <section class="post-content" itemprop="articleBody">
     {{ content }}
-  </div>
+  </section>
   
   {% if post.tags.size > 0 %}
     {% capture tags_content %}<i class="fa fa-tag{% if post.tags.size > 1 %}s{% endif %}"></i>: {% endcapture %}
@@ -44,6 +44,7 @@ layout: default
   {% if page.next.url %}
     <li><a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a></li>
   {% endif %}
-</il>
+</ul>
+
 
 

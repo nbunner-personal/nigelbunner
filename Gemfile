@@ -22,6 +22,8 @@ gem "minima", "~> 2.0"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "jekyll-paginate"
+   gem "bourbon", "5.0.0.beta.4"
+   gem "neat", "2.1.0"
    # gem "rb-pygments"
    # gem 'github-pages', group: :jekyll_plugins
 end

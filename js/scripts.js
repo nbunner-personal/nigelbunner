@@ -68,6 +68,12 @@ jQuery(document).ready(function($) {
 	
 	// add all your scripts here
 
+    $('.mobileNavIcon').click(function() {
+        $('#menu-top-nav').toggle();
+        $('#menuClosed').toggle();
+        $('#menuOpen').toggle();
+    });
+
 	// Flexi Background
 	/*
 File: flexi-background.js
