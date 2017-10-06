@@ -25,5 +25,6 @@ group :jekyll_plugins do
    gem "bourbon", "5.0.0.beta.4"
    gem "neat", "2.1.0"
    # gem "rb-pygments"
+   # gem 'github-pages'
    # gem 'github-pages', group: :jekyll_plugins
 end
