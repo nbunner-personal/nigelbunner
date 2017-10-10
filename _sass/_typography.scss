@@ -56,6 +56,9 @@ pre code {
 
 blockquote {background: #fffffa; padding-top: 15px; padding-bottom: 15px;}
 
+a:link, a:visited {color: #2294F6; text-decoration: none;}
+a:hover {color: lighten(#2294F6, 5%);}
+
 // h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 //   color: #262F33;
 // font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif;
