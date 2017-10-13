@@ -39,7 +39,7 @@ main {background: #E8F1F2; padding: 30px 15px;}
 @media only screen and (min-width: 768px) {
 	body {padding-left: 14em;}
 	aside {background-position: 0 0%; height: 100%; left: 0; position: fixed; top: 0; width: 14em;}
-	main {max-width: 900px; padding: 30px 40px;}
+	main {min-height: 650px; max-width: 900px; padding: 30px 40px;}
 	.footer {text-align: left;}
 }
 

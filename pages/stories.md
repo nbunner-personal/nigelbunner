@@ -5,9 +5,9 @@ currentPage: stories
 permalink: /stories.html
 ---
 
-<p>I wrote a book of short stories to accompany my debut album in March 2016. Each story was about a song from the album and is still available in a <a href="http://shop.sugardrum.com/">limited print edition</a>, free when you buy a CD copy of the album.</p>
+I wrote a book of short stories to accompany my debut album in March 2016. Each story was about a song from the album and is still available in a [limited print edition](http://shop.sugardrum.com/), free when you buy a CD copy of the album.</p>
 
-<p>The book is also available to <a href="https://read.amazon.co.uk/kp/embed?asin=B01N3OBT3W&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_k9XsybYE50G27">download from Amazon</a> in Kindle format, retitled as &quot;For you I hide this&quot;.</p>
+The book is also available to [download from Amazon](https://read.amazon.co.uk/kp/embed?asin=B01N3OBT3W&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_k9XsybYE50G27) in Kindle format, retitled as &quot;For you I hide this&quot;.
 
 <blockquote>	
     <h3>For you I hide This</h3>

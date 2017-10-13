@@ -4,9 +4,9 @@ title: Web Portfolio
 currentPage: webPortfolio
 permalink: /web-portfolio.html
 ---
-<p>I now have a permanant contract doing web design for a large travel website, so this page has now become more of an archive of some of the projects I have worked on in the past.</p>
+I now have a permanant contract doing web design for a large travel website, so this page has now become more of an archive of some of the projects I have worked on in the past.
 
-<p>I have split these up into websites that I have either designed &amp; coded and sites which I have just coded up from someone elses design. The second of these involves converting a design in Photoshop format into HTML and for some of them I have offered advice on the design based on my experience in website usability. In both cases all the HTML, JavaScript and CSS is handcoded except for a few Javascript plugins and the PHP code for websites based on an existing framework such as Wordpress.</p>
+I have split these up into websites that I have either designed &amp; coded and sites which I have just coded up from someone elses design. The second of these involves converting a design in Photoshop format into HTML and for some of them I have offered advice on the design based on my experience in website usability. In both cases all the HTML, JavaScript and CSS is handcoded except for a few Javascript plugins and the PHP code for websites based on an existing framework such as Wordpress.
 
 <section class="portfolio entry-content clearfix">
 
