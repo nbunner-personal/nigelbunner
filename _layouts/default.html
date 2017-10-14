@@ -41,8 +41,9 @@
 		<script type="text/javascript">			
 			let navTop = document.getElementById("menuTopNav");
 			let navClosedIcon = document.getElementById("menuClosed");
-			let navOpenIcon = document.getElementById("menuOpen");
+			let navOpenIcon = document.getElementById("menuOpen");			
 			document.getElementById('mobileNavIcon').onclick = function(){
+			      document.body.classList.toggle("showMenu");      
 			      navTop.classList.toggle("navHidden");
 			      navClosedIcon.classList.toggle("navHidden");
 			      navOpenIcon.classList.toggle("navHidden");

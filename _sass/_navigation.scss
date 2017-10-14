@@ -3,11 +3,12 @@
 	max-width: 440px;
 	overflow: hidden;
 	position: absolute;
-	right: 0;
+	right: 15px;
 	top: 44px;
 	width: 55%;
 	z-index: 1000;
-	li a {background: #fff; border-bottom: 1px solid $border-color; display: block; padding: 4px 12px; text-decoration: none;}
+	li a {background: #fff; border-radius: 3px; display: block; padding: 4px 12px; text-decoration: none;}
+	// border: 1px solid #99B7C1;
 
 }
 
@@ -27,6 +28,14 @@
 	text-align: center;
 	li, li a {display: inline-block;}
 	li a {margin: 0 6px;}
+}
+
+@media only screen and (min-width: 451px) {
+
+	.nav--top {
+		left: 15px; max-width: 240px; right: auto;
+	}
+
 }
 
 

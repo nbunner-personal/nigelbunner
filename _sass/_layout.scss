@@ -12,6 +12,11 @@ body {
 aside {background-image: url(/img/side-photo-mb.jpg); background-attachment: fixed; background-repeat: no-repeat; background-position: 50% 0; min-height: 45px; width: 100%;} // background: #537b93; 
 main {background: #E8F1F2; padding: 30px 15px;}
 
+body.showMenu {
+	padding-top: 350px;
+	aside {min-height: 350px; position: fixed; top: 0;}
+}
+
 .home aside {min-height: 300px;}
 
 .container {
@@ -40,13 +45,18 @@ main {background: #E8F1F2; padding: 30px 15px;}
   // -webkit-background-size: cover;
 
 @media only screen and (min-width: 451px) {
-	aside {overflow: scroll;}
+	body.showMenu {
+		padding-top: 260px;
+		aside {background-position: 50% -150px; min-height: 260px;}
+	}
+	aside {background-size: cover; overflow: scroll;}
 	.home aside {background-image: url(/img/side-photo-dt.jpg); background-position: 50% 100%; min-height: 250px;}
 }
 
 
 @media only screen and (min-width: 768px) {
 	body {padding-left: 14em;}
+	body.showMenu {padding-top: 0;}
 	aside, .home aside {background-image: url(/img/side-photo-dt.jpg); background-position: 0 0%; height: 100%; left: 0; position: fixed; top: 0; width: 14em;}
 	main {min-height: 650px; max-width: 900px; padding: 30px 40px;}
 	.footer {text-align: left;}
