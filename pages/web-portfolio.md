@@ -6,40 +6,25 @@ permalink: /web-portfolio.html
 ---
 I now have a permanant contract doing web design for a large travel website, so this page has now become more of an archive of some of the projects I have worked on in the past.
 
-I have split these up into websites that I have either designed &amp; coded and sites which I have just coded up from someone elses design. The second of these involves converting a design in Photoshop format into HTML and for some of them I have offered advice on the design based on my experience in website usability. In both cases all the HTML, JavaScript and CSS is handcoded except for a few Javascript plugins and the PHP code for websites based on an existing framework such as Wordpress.
+I have split these up into websites that I have either designed &amp; coded and sites which I have just coded up from someone elses design. The second of these involves converting a design in Photoshop format into HTML and for some of them I have offered advice on the design based on my experience in website usability. In both cases all the HTML, JavaScript and CSS is handcoded except for a few Javascript plugins and the site is either created using Wordpress, custom PHP templates or as a Jekyll static site.
 
 <section class="portfolio entry-content clearfix">
 
 <h2>Websites I have designed and coded</h2>
 
 <div class="portfolio_item clearfix">
-	<h3><a href="http://www.sugardrum.com/" title="Visit www.sugardrum.com">www.sugardrum.com</a></h3>
+	<a href="http://www.sugardrum.com/" title="Visit www.sugardrum.com">www.sugardrum.com</a></h3>
 	<p>My own site, created as a personal project to showcase my music.</p> 
-	<p>Skills used : Design, HTML, CSS, Javascript, PHP, Rewrite Rules.</p>
+	<p>Recently converted to a <a href="/blog/2016/12/09/moving-from-wordpress-to-jekyll/">static Jekyll based site</a>.</p>
 	<a href="http://www.sugardrum.com/" title="Visit www.sugardrum.com"><img src="img/portfolio-screenshots/sugardrum.jpg" alt="sugardrum.com" class="img-responsive" /></a>
 </div>
 
 <div class="portfolio_item clearfix">
 	<h3><a href="http://www.africanvision.org.uk/" title="Visit www.africanvision.org.uk">www.africanvision.org.uk</a></h3>
-	<p>	This is one of the charity websites I work on for gratis. I was responsible for the redesign, coding and restructuring of the site, using an existing logo design and the subsequenting rebranding of the site after the charity changed their name.</p>
-	<p>Skills used : Design, HTML, CSS, Javascript, PHP, Rewrite Rules.</p>
+	<p>This is one of the charity websites I work on for gratis. I was responsible for the redesign, coding and restructuring of the site, using an existing logo design and the subsequenting rebranding of the site after the charity changed their name.</p>	
 	<a href="http://www.africanvision.org.uk/" title="Visit www.africanvision.org.uk"><img src="img/portfolio-screenshots/africanvision.jpg" alt="africanvision.org.uk" class="img-responsive" /></a>
 </div>
 
-
-
-<div class="portfolio_item clearfix">
-	<h3><a href="http://www.richmondfilmservices.co.uk" title="Visit www.richmondfilmservices.co.uk">www.richmondfilmservices.co.uk</a></h3>
-	<p>Complete redesign/overhaul of existing site. The entire stock of this prestigious hire company was loaded into a database and a Content Management System (CMS) created so the company could edit the details about the products and add new products themselves.</p>
-	<p>The site also includes a dynamic enquiry form that allows users to add to a list whilst they browse the site which can then be easily emailed directly to Richmond Film Services.</p>
-
-	<p>Well over 1000 items are available to view on the site presented in an easy to use and seo friendly fashion.</p>
-
-	<p>A recent addition to the site is sales shop.</p>
-
-	<p>Skills used : Design, HTML, CSS, Javascript, PHP, Rewrite Rules.</p>
-	<a href="http://www.richmondfilmservices.co.uk" title="Visit http://www.richmondfilmservices.co.uk"><img src="img/portfolio-screenshots/rfs.jpg" alt="rfs.co.uk" class="img-responsive" /></a>
-</div>									
 
 </section>
 
@@ -68,7 +53,7 @@ I have split these up into websites that I have either designed &amp; coded and 
 
 <div class="portfolio_item clearfix">
 	<h3><a href="http://www.earthsong.co.uk/" title="Visit www.earthsong.co.uk">www.earthsong.co.uk</a></h3>
-	<p>Earthsong provide multicultural workshops for schools. The website proved to be quite a challenge at first as the design they provided was mainly image based. Fortunately I was able to prvent the load time from becoming to slow by merging most of the images into sprites and streamlinging the code as much as poosible.</p>
+	<p>Earthsong provide multicultural workshops for schools. The website proved to be quite a challenge at first as the design they provided was mainly image based. Fortunately I was able to prvent the load time from becoming to slow by merging most of the images into sprites and streamlining the code as much as poosible.</p>
 	<a href="http://www.earthsong.co.uk/" title="Visit www.earthsong.co.uk"><img src="img/portfolio-screenshots/earthsong.jpg" alt="marthatilston.co.uk" class="img-responsive" /></a>
 </div>	
 </section>
