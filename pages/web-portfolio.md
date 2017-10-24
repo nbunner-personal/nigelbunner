@@ -13,7 +13,7 @@ I have split these up into websites that I have either designed &amp; coded and 
 <h2>Websites I have designed and coded</h2>
 
 <div class="portfolio_item clearfix">
-	<a href="http://www.sugardrum.com/" title="Visit www.sugardrum.com">www.sugardrum.com</a></h3>
+	<h3><a href="http://www.sugardrum.com/" title="Visit www.sugardrum.com">www.sugardrum.com</a></h3>
 	<p>My own site, created as a personal project to showcase my music.</p> 
 	<p>Recently converted to a <a href="/blog/2016/12/09/moving-from-wordpress-to-jekyll/">static Jekyll based site</a>.</p>
 	<a href="http://www.sugardrum.com/" title="Visit www.sugardrum.com"><img src="img/portfolio-screenshots/sugardrum.jpg" alt="sugardrum.com" class="img-responsive" /></a>
