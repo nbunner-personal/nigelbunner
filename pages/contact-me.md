@@ -5,4 +5,22 @@ currentPage: contact
 permalink: /contact-me.html
 ---
 
-Feel free to contact me via my [Sugardrum music](http://sugardrum.com/contact/) website.
+<fieldset>
+    <form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify>
+  <p class="form-secret">
+    <label>Don’t fill this out:</label>
+    <input name="bot-field">
+  </p>
+  <p>
+    <label>Email:</label>
+    <input type="text" name="name">
+  </p>
+  <p>
+    <label>Message:</label>
+    <textarea name="message"></textarea>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+</fieldset>
