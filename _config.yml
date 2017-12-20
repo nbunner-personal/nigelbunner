@@ -17,7 +17,7 @@ title: Music, design and stories by Nigel Bunner
 description: > # this means to ignore newlines until "baseurl:"
   A collection of creative ideas and thoughts by Nigel Bunner
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.nigelbunner.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.nigelbunner.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sugardrummusic
 github_username:  nbunner
 
