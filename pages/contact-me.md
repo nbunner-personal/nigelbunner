@@ -6,10 +6,10 @@ permalink: /contact-me.html
 ---
 
 <fieldset>
-    <form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify>
+    <form name="contact" netlify-honeypot="dob" action="thank-you" netlify>
   <p class="form-secret">
     <label>Don’t fill this out:</label>
-    <input name="bot-field">
+    <input name="dob">
   </p>
   <p>
     <label>Email:</label>

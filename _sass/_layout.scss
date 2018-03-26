@@ -3,6 +3,7 @@
 body {
 	// background-attachment: fixed;
 	background-color: #E8F1F2; // #3f88c5
+	// background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2390aebb' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 	// background-image: url(/img/side-photo-web.jpg); 
 	// background-position: bottom 18em; 
 	// background-repeat: no-repeat;
@@ -26,15 +27,11 @@ body.showMenu {
 }
 
 .footer {
-	text-align: center;
+	background: #fff; text-align: center;
 	p {margin: 12px auto; text-align: center;}
 }
 
-.main-footer {
-  // background: rgba(255,255,255,0.9); 
-  margin-top: 30px; margin-bottom: 15px;
-  max-width: 900px;
-}
+.main-footer {border-top: 1px solid #f3f3f3; max-width: 900px; padding: 30px 0 15px;}
 
  // background-attachment: fixed;  
   // background-image: url(/img/bird-in-sky-back-2.jpg);
@@ -57,7 +54,7 @@ body.showMenu {
 @media only screen and (min-width: 768px) {
 	body {padding-left: 14em;}
 	body.showMenu {padding-top: 0;}
-	aside, .home aside {background-image: url(/img/side-photo-dt.jpg); background-position: 0 0%; height: 100%; left: 0; position: fixed; top: 0; width: 14em;}
+	aside, .home aside {background: rgba(255,255,255,0.8); border-right: 1px solid #f3f3f3; height: 100%; left: 0; position: fixed; top: 0; width: 14em;}
 	main {min-height: 650px; max-width: 900px; padding: 30px 40px;}
 	.footer {text-align: left;}
 }
@@ -71,5 +68,5 @@ body.showMenu {
 
 @media only screen and (min-width: 1400px) {
 	body {background-attachment: fixed; background-image: url(/img/side-photo-lg.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;}
-	aside, .home aside {background-image: none; background-color: transparent;}
+	// aside, .home aside {background-image: none; background-color: transparent;}
 }

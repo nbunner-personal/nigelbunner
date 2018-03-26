@@ -29,7 +29,7 @@ title: Music, design and stories by Nigel Bunner
 			</span>
 		</div>
 	</div>
-	<p>{{ post.content | strip_html | truncatewords:75 }}</p>	
+	<p>{{ post.content | strip_html | truncatewords:75 }}&hellip; <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>	
 </article>  
 {% endfor %}
 

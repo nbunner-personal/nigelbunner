@@ -53,7 +53,7 @@ sass:
 markdown: kramdown
 highlighter: rouge
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - rouge
