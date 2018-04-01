@@ -61,12 +61,12 @@ body.showMenu {
 
 @media only screen and (min-width: 1024px) {
 	body {padding-left: 20em;}
-	aside, .home aside {width: 20em;}
-
+	aside, .home aside {width: 20em;}	
 
 }
 
 @media only screen and (min-width: 1400px) {
 	body {background-attachment: fixed; background-image: url(/img/side-photo-lg.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;}
+	main {min-height: 1200px;}
 	// aside, .home aside {background-image: none; background-color: transparent;}
 }
