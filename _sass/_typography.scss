@@ -15,9 +15,9 @@ p {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {  
-  font-family: $heading-font-family;
-  font-weight: inherit;
-  line-height: 1.2;
+  // font-family: $heading-font-family;
+  // font-weight: inherit;
+  // line-height: 1.2;
   margin: 1.414em 0 0.5em;
 }
 
@@ -59,12 +59,12 @@ pre code {
   }
 }
 
-.page-lead {clear: both; font-size: 1.8rem; margin: 0 12px 30px 30px; padding: 30px 0; text-align: right;} // text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+.page-lead {border-top: 1px solid #f3f3f3; clear: both; font-size: 1.2rem; margin: 0 12px 30px 30px; padding: 30px 0; text-align: right;} // text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 
 blockquote {background: #fffffa; padding-top: 15px; padding-bottom: 15px;}
 
-a:link, a:visited {color: #2294F6; text-decoration: none;}
-a:hover {color: lighten(#2294F6, 5%);}
+a:link, a:visited {color: $action-color; text-decoration: none;}
+a:hover {color: lighten($action-color, 5%);}
 
 li {font-size: 1.2em; margin-bottom: 8px;}
 
