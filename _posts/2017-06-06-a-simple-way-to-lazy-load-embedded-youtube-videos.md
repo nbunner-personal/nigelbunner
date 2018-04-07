@@ -8,7 +8,7 @@ Like most musicians I use embedded YouTube videos on my website. They look great
 
 Fortunately, you can get around this by replacing the video iframe with a static image of the video. The video itself is then loaded in when the user clicks on the image. You can make it look even more userfriendly by adding a play icon over the top of the static image.
 
-This is called Lazy Loading and you can see an example of this on my [Sugardrum website](http://www.sugardrum.com/). I use this on both the home and on the videos pages, the latter of which uses some additional code to have just the one placement for multiple embedded videos. This is then refreshed depending on which video thumbnail you click on. I'll show how that is done in another blog post, for now here's how you do the lazy loading featured on the home page.
+This is called Lazy Loading and you can see an example of this on my [Sugardrum website](//sugardrum.com/). I use this on both the home and on the videos pages, the latter of which uses some additional code to have just the one placement for multiple embedded videos. This is then refreshed depending on which video thumbnail you click on. I'll show how that is done in another blog post, for now here's how you do the lazy loading featured on the home page.
 
 ## The HTML
 Here is the HTML for our player:
@@ -114,6 +114,6 @@ This creates a click event on the parent div when a click is made on the play bu
 And that's it. Some fairly simple jQuery code to lazy load your Embedded Youtube videos.
 
 ## Demo
-See the [Sugardrum homepage](http://sugardrum.com/) for an example of this in action.
+See the [Sugardrum homepage](//sugardrum.com/) for an example of this in action.
 
 		
