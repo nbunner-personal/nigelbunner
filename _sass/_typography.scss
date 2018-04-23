@@ -69,7 +69,7 @@ a:hover {color: lighten($action-color, 5%);}
 li {font-size: 1.2em; margin-bottom: 8px;}
 
 .home-intro {
-  border-bottom: 4px solid #F3F3F3; color: darken(#AEAEAE, 15%); font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 3rem; line-height: 1.7em; margin-bottom: 30px; padding: 30px; text-align: center;
+  border-bottom: 4px solid #F3F3F3; color: darken(#AEAEAE, 15%); font-family: $heading-font-family; font-size: 3rem; line-height: 1.7em; margin-bottom: 30px; padding: 30px; text-align: center;
   p {font-size: 2rem;}
 }
 

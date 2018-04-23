@@ -52,6 +52,7 @@
     max-width: 640px;
   }
   .post-content {
+    p:first-child {font-family: $heading-font-family; font-size: 1.4em;}
     ul {margin-top: 2.2rem; margin-bottom: 2.2rem;}
     iframe.musicplayer {margin: 2.2rem auto;}
     iframe.videoplayer {max-width: 560px;}
