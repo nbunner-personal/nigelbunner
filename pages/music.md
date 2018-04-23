@@ -11,7 +11,7 @@ I write storytelling songs and perform them on vocals and acoustic guitar under 
 
 >Sugardrum's remarkable fingerpicking style and beautiful vocal harmonies have led to comparisons with Sufjan Stevens and Nick Drake. The acoustic backdrop is enriched with touches of electronica on synthesiser, drum machine and Rhodes & acoustic piano. All  instruments on the record are played by Nigel, with the exception of the cello, bass and some of the backing vocals and percussion parts. He also creates the artwork, website and records & mixes the songs.
 
-More information on my music can be found at [www.sugardrum.com](http://www.sugardrum.com/) and by listening to some tunes on the player below&#8230;
+More information on my music can be found at [sugardrum.com](//www.sugardrum.com/) and by listening to some tunes on the player below&#8230;
 
 <div class="soundcloud_player"><iframe width="100%" height="380" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F678398&amp;auto_play=false&amp;show_artwork=true&amp;color=A7CBCF"></iframe></div>
 							
