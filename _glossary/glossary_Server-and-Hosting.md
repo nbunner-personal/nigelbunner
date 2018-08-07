@@ -1,7 +1,7 @@
 ---
 layout: glossary
 title: What does web serving and hosting mean?
-permalink: /glossary/glossary_Server-and-Hosting.html
+permalink: /glossary/server-and-hosting.html
 ---
 You need to get Hosting for your website as somewhere to store the files used by your site. A server is a computer, permanently running and connected to the internet that contains the files used by your website, and serves them up to a browser that requests them.
 

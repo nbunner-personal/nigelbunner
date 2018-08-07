@@ -2,7 +2,7 @@
 layout: glossary
 title: What does Browser Compatibility mean?
 meta-title: What does Browser Compatibility mean?
-permalink: /glossary/glossary_Browser-Compatibility.html
+permalink: /glossary/browser-compatibility.html
 ---
 
 <p>Although the majority of people use just the one web Browser, there are numerous others. Each one has it's own way of interpreting and thus displaying the data that makes up a website.</p> 

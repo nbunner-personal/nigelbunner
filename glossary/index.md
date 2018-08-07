@@ -8,4 +8,5 @@ I have set up this part of the site to help explain some of the terminology used
 
 These are only meant to be brief introductions to each subject. You can find out more about each one by following some of the links I've included or by doing a search on Wikipedia or Google.
 
-Please select a term from the list below to begin.																						
+Please select a term from the list below to begin.							
+
