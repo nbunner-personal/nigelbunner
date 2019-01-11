@@ -6,7 +6,11 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="article-header">
-    <h1 itemprop="name headline">{{ page.title }}</h1>   
+    {% if page.hero %}
+    <h1 class="hero-banner hero-banner--{{ page.hero }}" itemprop="name headline">{{ page.title }}</h1>   
+    {% else %}
+    <h1 itemprop="name headline">{{ page.title }}</h1>
+    {% endif %}
     {% if site.reading_time %}
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
@@ -37,7 +41,7 @@ layout: default
   
 </article>
 
-<ul class="nav nav-pills nav-justified">
+<ul class="nav nav-pills nav-justified list-unstyled">
   {% if page.previous.url %}
     <li><a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></li>
   {% endif %}

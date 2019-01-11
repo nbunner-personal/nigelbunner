@@ -46,3 +46,6 @@ hr {
 }
 
 .post-content p:first-child {font-size: 1.4em;}
+.post-content {
+  p, ul, ol {margin-bottom: 30px; max-width: 700px;}
+}
