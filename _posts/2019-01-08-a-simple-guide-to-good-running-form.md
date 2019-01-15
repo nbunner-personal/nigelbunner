@@ -5,7 +5,7 @@ date: 2019-01-08 21:00
 tags: [running]
 hero: running-through-leaves
 thumb: running-through-leaves.jpg
-description: Some techniques and tips I have picked up on how to improve your running form.
+description: Some techniques and tips I have picked up on how to improve your running form, including faster cadence and shorter stride length.
 ---
 
 I started running just around the time I turned 40. I can't remember the exact day or how far I went but I remember running around the local park for 10mins thinking to myself how this was the furthest I had run for over twenty years. 
