@@ -2,6 +2,7 @@
 layout: post
 title: A simple way to lazy load embedded Youtube videos
 date: 2017-06-06 20:55
+updated: 2019-01-28 22:00
 tags: [coding,css,jquery,music,youtube]
 ---
 Like most musicians I use embedded YouTube videos on my website. They look great, but can really slow the page down. This is especially true if you have more than one of them and is due to the [browser](/glossary/glossary_Web-Browser.html) having to download extra content from another [server](/glossary/glossary_Server.html). Not only can this affect the experience for the user but it could also have an affect on your page ranking on Google. 
@@ -23,7 +24,7 @@ Here is the HTML for our player:
     <p class="col-xs-12">Postcard (Official Video) by Sugardrum</p>
   </div>
 </section>
-  <script src="https://use.fontawesome.com/<* YOUR Fontawesome Id *>.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>  
 ```
 
@@ -39,7 +40,7 @@ So in my example I've added the ID of the video, which is *4pM6WphmRhQ* and sele
  
 You may have noticed that this div also has an id with the video id as part of it. This is used by the jQuery to add the correct YouTube ID into the URL for the iframe.
 
-Finally, there is an *i tag*. This is a Fontawesome video player play icon that is positioned over the top of the image to make it look more like a video. I've included the script tags to load in Fontawesome and jQuery but you'll need to add your own ID code to the Fontawesome script. You can get one from the [Fontawesome website](http://fontawesome.io/get-started/).
+Finally, there is an *i tag*. This is a Fontawesome video player play icon that is positioned over the top of the image to make it look more like a video. I've included the link and script tags to load in Fontawesome and jQuery but you should check the [Fontawesome website](http://fontawesome.io/get-started/) for the latest version, which at the time of writing this (January 2019) is version 5.6.3.
 
 
 ## The CSS
@@ -101,7 +102,7 @@ $('#videoPlayer').html(vid);
 ```
 
 ## Making the play icon work
-There's one last step. At the moment clicking on the play icon won't actually do anything as our click event is linked to its parent div with the class homeVideoThumbnail. As the play icon is position absolutely above this it obscures the div and so clicking on it does nothing. To fix this we need to add one more piece of jQuery code.
+There's one last step. At the moment clicking on the play icon won't actually do anything as our click event is linked to its parent div with the class homeVideoThumbnail. As the play icon is positioned absolutely above this it obscures the div and so clicking on it does nothing. To fix this we need to add one more piece of jQuery code.
 
 ```javascript
 $('.homeVideoPlayButton').click(function(){
@@ -115,5 +116,7 @@ And that's it. Some fairly simple jQuery code to lazy load your Embedded Youtube
 
 ## Demo
 See the [Sugardrum homepage](//sugardrum.com/) for an example of this in action.
+
+**Updated** January 2019 with new Fontawesome link tag for their CDN.
 
 		
