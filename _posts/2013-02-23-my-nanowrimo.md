@@ -12,7 +12,7 @@ guid: http://www.nigelbunner.co.uk/?p=326
 permalink: /blog/2013/02/23/my-nanowrimo/
 tags: [writing]
 ---
-Last November I took part in a writing event that thousands of people across the globe were sharing in, [NaNoWriMo](http://www.nanowrimo.org "National Novel Writing Month"). Every day I would sit down in front of my laptop in the small moments of free time I could find and spend as long as I could writing a story called Postcards. In the evenings this was often for as long as I could stay awake or could force my addled brain to work for.
+Last November I took part in a writing event that thousands of people across the globe were sharing in, [NaNoWriMo](https://www.nanowrimo.org "National Novel Writing Month"). Every day I would sit down in front of my laptop in the small moments of free time I could find and spend as long as I could writing a story called Postcards. In the evenings this was often for as long as I could stay awake or could force my addled brain to work for.
 
 Over the course of the month I saw my daily word update as a small graph on the NaNoWriMo word count, like a staircase leading up to some hidden prize. On days where I did no writing the staircase would stubbornly remain at the same level. On the days after this they would form a small cliff as my word count shot up due to my efforts at catching up.
 
@@ -28,7 +28,7 @@ This weekend was the first time I had revisited what I had written and I found i
 
 A couple of days later I now have more of an idea as to what on earth this novel is about. I know what significance the postcards in it have, although I can&#8217;t tell you that yet 🙂 I&#8217;m slowly rewriting sections of it and adding new ones and have thought of some major plot changes that work much better. My aim is to eventually release it as some kind of companion to the album I&#8217;m working on of the same name.
 
-It&#8217;s strange looking back as all this came about from my attempt at working through the Artists Way. It took me over a year and I still never got pass lesson 7, but it rekindled in me a desire for story writing. Something I used to be quite into but had just restricted to my [song writing](http://www.sugardrum.com/ "Acoustic Storytelling Songs by Sugardrum") these past few years.
+It&#8217;s strange looking back as all this came about from my attempt at working through the Artists Way. It took me over a year and I still never got pass lesson 7, but it rekindled in me a desire for story writing. Something I used to be quite into but had just restricted to my [song writing](https://www.sugardrum.com/ "Acoustic Storytelling Songs by Sugardrum") these past few years.
 
 Here are a few of my NaNoWriMo tips:
 
@@ -38,16 +38,10 @@ Here are a few of my NaNoWriMo tips:
 
   * Do some practise writing before November. This will help with the next tip.
 
-  * Find a writing method that works best for you. I used a combination of [Scrivener](http://literatureandlatte.com/ "Scrivener") and pen and paper.
+  * Find a writing method that works best for you. I used a combination of [Scrivener](https://literatureandlatte.com/ "Scrivener") and pen and paper.
 
   * Don&#8217;t worry about making a plan. I had a very loose outline at the start and just made up the plot as I went along. The end result was probably less well formed and structured than it would have been had I had made a plan but my aim was to just get some ideas down that I could work on afterwards.
 
   * Don&#8217;t worry about both writing really good prose and finishing the story within the 50,000 words at the same time and within the month. I ended up with some sections being better written than others but I didn&#8217;t manage to finish the actual story within the 50,0000 words.
 
 So, would I recommend taking part in NaNoWriMo? Of course. It&#8217;s a crazy idea and often those are the most fun and reap the greatest rewards. Hopefully, I&#8217;ll have finished rewriting my novel before this years November NaNoWriMo and the whole crazy episode starts all over again.
-
-&nbsp;
-
-<div id="bpp_credits" style="clear: both; float: right; width: 200px; height: 70px; text-align: right;">
-  <a style="text-decoration: none;" href="http://www.blogpadpro.com" target="_blank"><span style="vertical-align: middle; font-size: 8pt; color: #999;">Edited with BlogPad Pro</span><img style="vertical-align: middle; padding-left: 5px;" alt="" src="http://blogpadproapp.files.wordpress.com/2012/09/speech-bubble.png" width="25" height="25" /></a>
-</div>

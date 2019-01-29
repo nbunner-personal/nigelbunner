@@ -59,11 +59,11 @@ Rather than go into why the above do not work for me I'll list the reasons why I
 All of these should hopefully save you time setting up and maintaining your online presence so you can spend more time being a musician. 
 
 ## Bandcamp
-When I first created a website for [Sugardrum](http://www.sugardrum.com) the only way to add music to your website was to create and upload the mp3s yourself, then add some code such as a Flash based music player so people could listen to them. Before doing this the mp3s had to have their ID3 tags and file names set correctly. You also had to attempt to hide the actual location of the mp3s in case someone tried to bypass the online player and download the tracks for free. 
+When I first created a website for [Sugardrum](https://www.sugardrum.com) the only way to add music to your website was to create and upload the mp3s yourself, then add some code such as a Flash based music player so people could listen to them. Before doing this the mp3s had to have their ID3 tags and file names set correctly. You also had to attempt to hide the actual location of the mp3s in case someone tried to bypass the online player and download the tracks for free. 
 
 On top of this if you wanted to sell your music on your site you either added some PayPal buttons or setup your own shopping cart software. I tried both of these and even created my own shopping cart software which was used on a couple of other sites for a while.
 
-Nowadays I don't bother with any of this as I just use [Bandcamp](http://shop.sugardrum.com/). 
+Nowadays I don't bother with any of this as I just use [Bandcamp](https://shop.sugardrum.com/). 
 
 This is a great way to sell your music online. They have HTML5 players that you can easily style and embed onto your own website. You also get your own set of pages on their site where you can market and sell your music. These pages can be styled with images and colours to match your own branding. Once you've setup a new album or EP and uploaded the tracks in WAV format they take care of all the file conversion into other formats for you and the tracks have the correct ID3 information added based on the album you add them to. 
 
@@ -71,7 +71,7 @@ Users are given the option of downloading in MP3, Ogg and WAV formats and they e
 
 Here's an example of one the simplest of their music player layouts:
 
-<iframe class="musicplayer" style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=1566325814/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://shop.sugardrum.com/album/postcards">Postcards by Sugardrum</a></iframe>
+<iframe class="musicplayer" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1566325814/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://shop.sugardrum.com/album/postcards">Postcards by Sugardrum</a></iframe>
 
 
 ## Soundcloud 
@@ -81,23 +81,23 @@ Many people may only be aware of a Soundcloud as a streaming service similar to 
 
 I used to use their widgets on my own site before I decided it made more sense to just use the Bandcamp embedded player. I still upload tracks there though as it's such a great tool for sharing. I can create private playlists with demos or unreleased tracks and send people the URL to download or listen to them online. 
 
-It can also be used to submit tracks to competitions, record labels or radio stations via an inbox facility that you upload one of your tracks on Soundcloud to. I've had great results from this, uploading tracks to the [Freshonthenet](http://freshonthenet.co.uk/) Soundcloud page run by Tom Robinson's BBC 6music show. 
+It can also be used to submit tracks to competitions, record labels or radio stations via an inbox facility that you upload one of your tracks on Soundcloud to. I've had great results from this, uploading tracks to the [Freshonthenet](https://freshonthenet.co.uk/) Soundcloud page run by Tom Robinson's BBC 6music show. 
 
 Soundcloud have a free and a pro plan, the latter giving you more recording time and playlists for a small annual fee. Despite the recents cuts they've made to their workforce and the rumours of an imminent buyout I still think it's worth creating an artist account if you haven't already and taking a look at what they have to offer. 
 
 
 ## IFTTT 
-The best kind of websites are those that update themselves using data from other sites. I use the If This Then That [(IFTTT)](https://ifttt.com/) service to link my [Instagram](http://instagram.com/sugardrum) and Twitter accounts together. Now, whenever I post a picture to Instagram a tweet of the photo is automatically created in my Twitter account. You can do so much more with IFTTT, linking thousands of different services together and all for free. 
+The best kind of websites are those that update themselves using data from other sites. I use the If This Then That [(IFTTT)](https://ifttt.com/) service to link my [Instagram](https://instagram.com/sugardrum) and Twitter accounts together. Now, whenever I post a picture to Instagram a tweet of the photo is automatically created in my Twitter account. You can do so much more with IFTTT, linking thousands of different services together and all for free. 
 
 
 ## Buffer
-I use [Buffer](https://buffer.com/) to write posts for [Twitter](http://twitter.com/sugardrummusic), Facebook or Google Plus when I think of them in advance. These are then scheduled to go live at the best time possible. 
+I use [Buffer](https://buffer.com/) to write posts for [Twitter](https://twitter.com/sugardrummusic), Facebook or Google Plus when I think of them in advance. These are then scheduled to go live at the best time possible. 
 
 This is my only point of contact with Google plus; I just set up the posts via Buffer and check their stats to see how they are performing. 
 
 
 ## Facebook
-Just as hardly any non musicians use MySpace, the opposite can be said about [Facebook](http://www.facebook.com/pages/sugardrum/289395918859). It can be a great promotional tool for gigs, videos and new releases. I usually post a short summary of any blog posts on there to direct people to my website and have also paid to promote a few posts using Facebook ads. 
+Just as hardly any non musicians use MySpace, the opposite can be said about [Facebook](https://www.facebook.com/pages/sugardrum/289395918859). It can be a great promotional tool for gigs, videos and new releases. I usually post a short summary of any blog posts on there to direct people to my website and have also paid to promote a few posts using Facebook ads. 
 
 One of my more successful promotions was a live video I made of my acoustic cover of The Smiths song, [There is a light and it never goes out](https://youtu.be/jt9BeiRDwJI). Using targeted ads I was able to get this seen by thousands of Smiths fans and received some lovely feedback as a result. I've found that posting videos directly to Facebook creates more user engagement than a link to a video on YouTube or Vimeo. 
 
@@ -113,11 +113,11 @@ The reason why I haven't included iTunes, Spotify etc is that this UK website al
 
 
 ## YouTube
-More people are listening to music on YouTube than ever before. I usually upload my music videos to both [YouTube](http://www.youtube.com/user/sugardrum) and Vimeo but have had more success promoting them on YouTube. Recording live videos of unique cover versions and uploading them to YouTube can be a great promotional tool. My Smiths cover mentioned earlier has become one of the top 3 most listened to acoustic covers of the song on there. 
+More people are listening to music on YouTube than ever before. I usually upload my music videos to both [YouTube](https://www.youtube.com/user/sugardrum) and Vimeo but have had more success promoting them on YouTube. Recording live videos of unique cover versions and uploading them to YouTube can be a great promotional tool. My Smiths cover mentioned earlier has become one of the top 3 most listened to acoustic covers of the song on there. 
 
 <div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/jt9BeiRDwJI" frameborder="0" allowfullscreen></iframe></div>
 
-You can add keywords and create playlists grouping videos together. They also provide a simple widget to display them on your own site with options to further refine the load times using [Lazy Loading](http://www.nigelbunner.co.uk/blog/a-simple-way-to-lazy-load-embedded-youtube-videos/) .
+You can add keywords and create playlists grouping videos together. They also provide a simple widget to display them on your own site with options to further refine the load times using [Lazy Loading](https://www.nigelbunner.co.uk/blog/a-simple-way-to-lazy-load-embedded-youtube-videos/) .
 
 ## Songkick
 It used to take me ages having to enter gigs onto MySpace, then copying them over to Facebook, Peoplesound and a number of other sites which all had their own gigs implementation. Now I just post them onto Songkick via their [Tour Box](https://tourbox.songkick.com/) subsite and the data is then used by a number of other websites. It's become the one stop place on the web to enter your gig dates. 

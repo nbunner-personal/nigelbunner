@@ -112,7 +112,7 @@ Everybody’s body is slightly different so If you want advice specific to you h
 
 [Vivobarefoot - Walking Barefoot & Natural Running Transition & Courses](https://www.vivobarefoot.com/uk/coaching)
 
-[Stride UK Running rehab, performance and 3D analysis.](http://strideuk.com/)
+[Stride UK Running rehab, performance and 3D analysis.](https://strideuk.com/)
 
 I have no affiliation with either of them, just a happy customer of both. 
 
@@ -126,9 +126,9 @@ That’s a general summary of things. In part two I plan do go into more detail 
 - [How NOT to start barefoot running - Xero Shoes](https://xeroshoes.com/sandals-barefoot/how-not-to-start-barefoot-running/)
 - [5 Common Stride Missteps - Xero Shoes](https://xeroshoes.com/sandals-barefoot/5-common-stride-missteps/)
 - [Proper Running Technique: Six Ways to Improve Efficiency](https://www.kinetic-revolution.com/running-technique-6-ways-to-improve-efficiency/)
-- [5 Tips on How To Improve Your Running Form - Natural Running Center](http://naturalrunningcenter.com/2013/11/17/40-tips-improve-running-form/)
+- [5 Tips on How To Improve Your Running Form - Natural Running Center](https://naturalrunningcenter.com/2013/11/17/40-tips-improve-running-form/)
 - [There's more to 'barefoot' running than thin soles: technique is vital, too - The Guardian](https://www.theguardian.com/lifeandstyle/the-running-blog/2013/apr/17/barefoot-running-thin-soles-technique)
-- [Why Tight Leg Muscles Are a Good Thing for Running Performance - RUN FOREFOOT](http://runforefoot.com/tight-leg-muscles-running-performance/)
+- [Why Tight Leg Muscles Are a Good Thing for Running Performance - RUN FOREFOOT](https://runforefoot.com/tight-leg-muscles-running-performance/)
 - [Dr. Rangan Chatterjee on why barefoot is best for kids - YouTube](https://www.youtube.com/watch?v=OnVQCjYzYuQ&feature=share)
 - [Secrets To Reclaiming Your Flat Footed Squat For Yoga Pt 1 (Update 201 – Ekaminhale](https://ekaminhale.com/blogs/news/the-secret-to-reclaiming-your-flat-footed-squat)
 

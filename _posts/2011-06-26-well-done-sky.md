@@ -14,4 +14,4 @@ Today was such a beautiful looking day that it made you want to look up at the s
 
 The cat seemed to like it too&#8230;
   
-[<img src="http://farm7.static.flickr.com/6045/5874616892_ca83c173c2_z.jpg" alt="IMG_6186" width="640" height="480" />](http://www.flickr.com/photos/icklephotos/5874616892/ "IMG_6186 by icle fotos, on Flickr")
+[<img src="https://farm7.static.flickr.com/6045/5874616892_ca83c173c2_z.jpg" alt="IMG_6186" width="640" height="480" />](https://www.flickr.com/photos/icklephotos/5874616892/ "IMG_6186 by icle fotos, on Flickr")

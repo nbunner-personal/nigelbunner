@@ -40,7 +40,7 @@ So in my example I've added the ID of the video, which is *4pM6WphmRhQ* and sele
  
 You may have noticed that this div also has an id with the video id as part of it. This is used by the jQuery to add the correct YouTube ID into the URL for the iframe.
 
-Finally, there is an *i tag*. This is a Fontawesome video player play icon that is positioned over the top of the image to make it look more like a video. I've included the link and script tags to load in Fontawesome and jQuery but you should check the [Fontawesome website](http://fontawesome.io/get-started/) for the latest version, which at the time of writing this (January 2019) is version 5.6.3.
+Finally, there is an *i tag*. This is a Fontawesome video player play icon that is positioned over the top of the image to make it look more like a video. I've included the link and script tags to load in Fontawesome and jQuery but you should check the [Fontawesome website](https://fontawesome.io/get-started/) for the latest version, which at the time of writing this (January 2019) is version 5.6.3.
 
 
 ## The CSS

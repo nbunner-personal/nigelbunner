@@ -21,4 +21,4 @@ So I was right, it is about something eco friendly and groovy. There were all so
 
 I didn&#8217;t get a chance to speak to the bee keeper but I hope these new bee keepers are being taught how to keep their bees ethically &#8211; i.e. to encourage the bees to produce a surplus of honey so the bees aren&#8217;t left just feeding on the sugared water that some bee keepers leave them after taking their winter food.
 
-To find out more about Transition towns visit their website at&#8230; <a href="http://www.transitionnetwork.org/" target="_blank">www.transitionnetwork.org/</a>
+xTo find out more about Transition towns visit their website at&#8230; <a href="https://www.transitionnetwork.org/" target="_blank">www.transitionnetwork.org/</a>
