@@ -53,7 +53,7 @@ I have split these up into websites that I have either designed &amp; coded and 
 
 <div class="portfolio_item clearfix">
 	<h3><a href="http://www.earthsong.co.uk/" title="Visit www.earthsong.co.uk">www.earthsong.co.uk</a></h3>
-	<p>Earthsong provide multicultural workshops for schools. The website proved to be quite a challenge at first as the design they provided was mainly image based. Fortunately I was able to prvent the load time from becoming to slow by merging most of the images into sprites and streamlining the code as much as poosible.</p>
+	<p>Earthsong provide multicultural workshops for schools. The website proved to be quite a challenge at first as the design they provided was mainly image based. Fortunately I was able to prevent the load time from becoming to slow by merging most of the images into sprites and streamlining the code as much as poosible.</p>
 	<a href="http://www.earthsong.co.uk/" title="Visit www.earthsong.co.uk"><img src="img/portfolio-screenshots/earthsong.jpg" alt="marthatilston.co.uk" class="img-responsive" /></a>
 </div>	
 </section>
