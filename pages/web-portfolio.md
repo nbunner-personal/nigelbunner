@@ -16,13 +16,19 @@ I have split these up into websites that I have either designed &amp; coded and 
 	<h3><a href="http://www.sugardrum.com/" title="Visit www.sugardrum.com">www.sugardrum.com</a></h3>
 	<p>My own site, created as a personal project to showcase my music.</p> 
 	<p>Recently converted to a <a href="/blog/2016/12/09/moving-from-wordpress-to-jekyll/">static Jekyll based site</a>.</p>
-	<a href="http://www.sugardrum.com/" title="Visit www.sugardrum.com"><img src="img/portfolio-screenshots/sugardrum.jpg" alt="sugardrum.com" class="img-responsive" /></a>
+	<a href="http://www.sugardrum.com/" title="Visit www.sugardrum.com"><img src="img/portfolio-screenshots/sugardrum-2019.jpg" alt="sugardrum.com" class="img-responsive" /></a>
 </div>
 
 <div class="portfolio_item clearfix">
 	<h3><a href="http://www.africanvision.org.uk/" title="Visit www.africanvision.org.uk">www.africanvision.org.uk</a></h3>
 	<p>This is one of the charity websites I work on for gratis. I was responsible for the redesign, coding and restructuring of the site, using an existing logo design and the subsequenting rebranding of the site after the charity changed their name.</p>	
 	<a href="http://www.africanvision.org.uk/" title="Visit www.africanvision.org.uk"><img src="img/portfolio-screenshots/africanvision.jpg" alt="africanvision.org.uk" class="img-responsive" /></a>
+</div>
+
+<div class="portfolio_item clearfix">
+	<h3><a href="https://www.wupadupa.com/" title="Visit www.wupadupa.com">www.wupadupa.com</a></h3>
+	<p>This is an older site that I recently converted to use GatsbyJS. I liked the slightly retro and simple styling of the original so kept most of it, just made it load faster, more accessible and made the layout fully responsive.</p>	
+	<a href="https://www.wupadupa.com/" title="Visit www.wupadupa.com"><img src="img/portfolio-screenshots/wupadupa.jpg" alt="wupadupa.com" class="img-responsive" /></a>
 </div>
 
 
@@ -53,7 +59,8 @@ I have split these up into websites that I have either designed &amp; coded and 
 
 <div class="portfolio_item clearfix">
 	<h3><a href="http://www.earthsong.co.uk/" title="Visit www.earthsong.co.uk">www.earthsong.co.uk</a></h3>
-	<p>Earthsong provide multicultural workshops for schools. The website proved to be quite a challenge at first as the design they provided was mainly image based. Fortunately I was able to prevent the load time from becoming to slow by merging most of the images into sprites and streamlining the code as much as poosible.</p>
+	<p>Earthsong provide multicultural workshops for schools. The website proved to be quite a challenge at first as the design they provided was mainly image based. Fortunately I was able to prevent the load time from becoming too slow by merging most of the images into sprites and streamlining the code as much as posible.</p>
+	<p>I recently converted it to a static Jekyll based site to help it load even faster.</p>
 	<a href="http://www.earthsong.co.uk/" title="Visit www.earthsong.co.uk"><img src="img/portfolio-screenshots/earthsong.jpg" alt="marthatilston.co.uk" class="img-responsive" /></a>
 </div>	
 </section>
