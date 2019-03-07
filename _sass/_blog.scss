@@ -1,102 +1,102 @@
 .date {color: #AEAEAE; font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif; font-size: 1.1em;}
 
 
-.entry-content h3,
-.entry-content .h3 {
-  color: #747E83;
-  font-style: italic;
-  font-weight: normal;
-}
-
-
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: 30px; }
-
-// .post-title {
-//   font-size: 42px;
-//   letter-spacing: -1px;
-//   line-height: 1; }
-//   @media screen and (max-width: 800px) {
-//     .post-title {
-//       font-size: 36px; } }
-
-.post-content {
-  margin-bottom: 30px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 800px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 800px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h4 {
-        font-size: 18px; } }
-
-
-         .entry-content h3,
-  .entry-content .h3 {
-    font-size: 1.3em;
-  }
-  .entry-content p,
-  .article-header p {
-    line-height: 1.6em;
-    max-width: 640px;
-  }
-  .post-content {
-    p:first-child {font-family: $heading-font-family; font-size: 1.4em;}
-    ul {margin-top: 2.2rem; margin-bottom: 2.2rem;}
-    iframe.musicplayer {margin: 2.2rem auto;}
-    iframe.videoplayer {max-width: 560px;}
-  }
-  .post .article-header h1,
-  .post .article-header h2 {
-    // background: #F8F8F8;
-    // border-left: 2px solid #6293ab;    
-    // background: #fff;
-    margin-left: -15px;
-    padding: 8px 15px;
-    // a:link, a:visited {color: #6293AB;}
-  }
-  .intro_text {
-    margin: 0 0 60px;
-  }
-  .intro_text h1 {
-    font-size: 1.4em;
-    letter-spacing: 1px;
-    margin: 0 0 10px;
-    text-transform: uppercase;
-  }
-  .intro_text h1 span {
-    font-size: 1.5em;
-    letter-spacing: 0;
-  }
-  .intro_text p {
-    margin: 0 0 3px;
-  }
-  .home_port ul {
-    max-width: 790px;
-  }
-  .portfolio_item {
-    margin-right: 30px;
-  }
-
-
-// code {
-//   background: #F9F9FA;
-// border: 1px solid #cacaca;
-// display: block;
-// padding: 15px;
+// .entry-content h3,
+// .entry-content .h3 {
+//   color: #747E83;
+//   font-style: italic;
+//   font-weight: normal;
 // }
 
 
+// /**
+//  * Posts
+//  */
+// .post-header {
+//   margin-bottom: 30px; }
 
-.h_post {margin: 60px 30px;}
+// // .post-title {
+// //   font-size: 42px;
+// //   letter-spacing: -1px;
+// //   line-height: 1; }
+// //   @media screen and (max-width: 800px) {
+// //     .post-title {
+// //       font-size: 36px; } }
+
+// .post-content {
+//   margin-bottom: 30px; }
+//   .post-content h2 {
+//     font-size: 32px; }
+//     @media screen and (max-width: 800px) {
+//       .post-content h2 {
+//         font-size: 28px; } }
+//   .post-content h3 {
+//     font-size: 26px; }
+//     @media screen and (max-width: 800px) {
+//       .post-content h3 {
+//         font-size: 22px; } }
+//   .post-content h4 {
+//     font-size: 20px; }
+//     @media screen and (max-width: 800px) {
+//       .post-content h4 {
+//         font-size: 18px; } }
+
+
+//          .entry-content h3,
+//   .entry-content .h3 {
+//     font-size: 1.3em;
+//   }
+//   .entry-content p,
+//   .article-header p {
+//     line-height: 1.6em;
+//     max-width: 640px;
+//   }
+//   .post-content {
+//     p:first-child {font-family: $heading-font-family; font-size: 1.4em;}
+//     ul {margin-top: 2.2rem; margin-bottom: 2.2rem;}
+//     iframe.musicplayer {margin: 2.2rem auto;}
+//     iframe.videoplayer {max-width: 560px;}
+//   }
+//   .post .article-header h1,
+//   .post .article-header h2 {
+//     // background: #F8F8F8;
+//     // border-left: 2px solid #6293ab;    
+//     // background: #fff;
+//     margin-left: -15px;
+//     padding: 8px 15px;
+//     // a:link, a:visited {color: #6293AB;}
+//   }
+//   .intro_text {
+//     margin: 0 0 60px;
+//   }
+//   .intro_text h1 {
+//     font-size: 1.4em;
+//     letter-spacing: 1px;
+//     margin: 0 0 10px;
+//     text-transform: uppercase;
+//   }
+//   .intro_text h1 span {
+//     font-size: 1.5em;
+//     letter-spacing: 0;
+//   }
+//   .intro_text p {
+//     margin: 0 0 3px;
+//   }
+//   .home_port ul {
+//     max-width: 790px;
+//   }
+//   .portfolio_item {
+//     margin-right: 30px;
+//   }
+
+
+// // code {
+// //   background: #F9F9FA;
+// // border: 1px solid #cacaca;
+// // display: block;
+// // padding: 15px;
+// // }
+
+
+
+// .h_post {margin: 60px 30px;}

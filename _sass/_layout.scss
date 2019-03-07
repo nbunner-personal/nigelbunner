@@ -1,37 +1,68 @@
-// #container {margin: 0 auto; max-width: 900px; width: 100%;}
-// #main {background: rgba(255,255,255,0.9); clear: both; max-width: 900px; padding-bottom: 60px;}
+
 body {
-	// background-attachment: fixed;
-	background-color: #E8F1F2; // #3f88c5
-	// background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2390aebb' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-	// background-image: url(/img/side-photo-web.jpg); 
-	// background-position: bottom 18em; 
-	// background-repeat: no-repeat;
-	// background-size: cover; 
+	background-color: #f3f6f7; // #3f88c5
+	background-image: url(/img/nigel-walking--sm-mobile.jpg);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 	position: relative;
 }
-aside {background-image: url(/img/side-photo-mb.jpg); background-attachment: fixed; background-repeat: no-repeat; background-position: 50% 0; min-height: 45px; width: 100%;} // background: #537b93; 
-main {background: #fff; padding: 30px 15px;}
 
-body.showMenu {
-	padding-top: 350px;
-	aside {min-height: 350px; position: fixed; top: 0;}
+.container {
+  display: flex;
+  flex-direction: column;
+  // height: 100%;
+  margin: 0 auto;
+  max-width: 1082px;
 }
 
-.home aside {min-height: 300px;}
+.hero-banner {
+	background: rgba(255,255,255,0.7);
+	margin: 12px;
+	padding: 8px;
+}
+.content {
+	padding: 12px;
+}
+
+
+aside { } // background: #537b93; 
+main {margin-bottom: 8px;}
+.entry-content {}
+
+article.cont {
+	display: flex;
+	flex-direction: column;
+}
+.content {background: #fff;}
+
+body.showMenu {
+	// main, footer {position: fixed;}
+	// padding-top: 350px;
+	// aside {min-height: 350px; position: fixed; top: 0;}
+}
+
+// .home aside {min-height: 300px;}
 
 .container {
 
-	@include grid-container;
+	// @include grid-container;
 
 }
 
 .footer {
 	background: #fff; text-align: center;
-	p {margin: 12px auto; text-align: center;}
+	p {margin: 12px auto;}
+}
+.footer--page {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: auto;
 }
 
-.main-footer {border-top: 1px solid #f3f3f3; max-width: 900px; padding: 30px 0 15px;}
+// .main-footer {border-top: 1px solid #f3f3f3; max-width: 900px; padding: 30px 0 15px;}
 
  // background-attachment: fixed;  
   // background-image: url(/img/bird-in-sky-back-2.jpg);
@@ -41,32 +72,87 @@ body.showMenu {
   // -moz-background-size: cover;
   // -webkit-background-size: cover;
 
-@media only screen and (min-width: 451px) {
+@media only screen and (min-width: 479px) {
 	body.showMenu {
-		padding-top: 260px;
-		aside {background-position: 50% -150px; min-height: 260px;}
+		// padding-top: 260px;
+		// aside {background-position: 50% -150px; min-height: 260px;}
 	}
-	aside {background-size: cover; overflow: scroll;}
-	.home aside {background-image: url(/img/side-photo-dt.jpg); background-position: 50% 100%; min-height: 250px;}
+	body {
+		background-image: url(/img/nigel-walking--lg-mobile.jpg);
+		background-position: 0 17rem;
+		background-size: auto auto;
+	}
+	.hero-banner {
+		background-color: transparent;
+	}
+	.content {
+		margin-left: 80px;
+		min-height: 800px;
+	}
+	// aside {background-size: cover; overflow: scroll;}
+	// .home aside {background-image: url(/img/side-photo-dt.jpg); background-position: 50% 100%; min-height: 250px;}
 }
+
 
 
 @media only screen and (min-width: 768px) {
-	body {padding-left: 14em;}
-	body.showMenu {padding-top: 0;}
-	aside, .home aside {background: rgba(255,255,255,0.8); border-right: 1px solid #f3f3f3; height: 100%; left: 0; position: fixed; top: 0; width: 14em;}
-	main {min-height: 650px; max-width: 900px; padding: 30px 40px;}
-	.footer {text-align: left;}
+	// body {padding-left: 14em;}
+	// body.showMenu {padding-top: 0;}
+	// aside, .home aside {background: rgba(255,255,255,0.8); border-right: 1px solid #f3f3f3; height: 100%; left: 0; position: fixed; top: 0; width: 14em;}
+	// main {min-height: 650px; max-width: 900px; padding: 30px 40px;}
+	// .footer {text-align: left;}
+	body {
+		background-image: url(/img/nigel-walking--tablet.jpg);
+	}
+	.content {margin-left: 114px; max-width: 724px;}
+
 }
 
 @media only screen and (min-width: 1024px) {
-	body {padding-left: 20em;}
-	aside, .home aside {width: 20em;}	
+	// body {padding-left: 20em;}
+	// aside, .home aside {width: 20em;}	
+
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		background-image: none;
+	}
+	main {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	article.cont {
+		display: grid;
+		grid-column-gap: 1rem;
+		grid-row-gap: 8px;
+		grid-template-rows: [body] auto [footer] auto;
+		grid-template-columns: [sidebar] 342px [content] 724px;
+	}
+	.article-header {
+		
+	}
+	.hero-banner {
+		background: url(/img/nigel-walking--desktop.jpg) 0 0 no-repeat;
+		grid-row: body;
+		grid-column: sidebar;
+		margin: 0;
+		padding: 24px 12px;
+	}
+	.content {
+		grid-row: body;
+		grid-column: content;
+		margin-left: 0;
+	}
+	.footer--post {
+		grid-row: footer;
+		grid-column: content;
+	}
 
 }
 
 @media only screen and (min-width: 1400px) {
-	body {background-attachment: fixed; background-image: url(/img/side-photo-lg.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;}
-	main {min-height: 1200px;}
+	body {}
+	// main {min-height: 1200px;}
 	// aside, .home aside {background-image: none; background-color: transparent;}
 }
