@@ -11,9 +11,9 @@ I have been been a professional web designer and frontend developer for over 15 
 
 My Javascript development skills include working in VueJS, React and jQuery and I am proficient using Javascript development tools including Webpack, Gulp, Grunt and working in a Git based environment.
 
-I currently have 2 music projects on the go: 
+I currently have 2 [music](/music.html) projects on the go: 
 
-**[Sugardrum](/music.html)** this is acoustic basedsetup that I perform live on vocals and acoustic guitar. More info at my [Sugardrum website](https://sugardrum.com).
+**Sugardrum** this is an acoustic based setup that I perform live on vocals and acoustic guitar. More info at my [Sugardrum website](https://sugardrum.com).
 
 **Jigsaw Goldrush** this is for my more electronic and keyboard based music. I currenty have the one album of piano music that has been used for meditation and hypno-birthing. more info at the [website](https://www.jigsawgoldrush.com).
 
