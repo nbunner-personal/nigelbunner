@@ -148,6 +148,7 @@ blockquote {
 
 body {
   // background-color: white;
+  font-display: auto;
   font-family: $base-font-family;
   // font-weight: 400;
   // line-height: 1.45;
@@ -166,6 +167,7 @@ a:link, a:visited {
 // }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {  
+  font-display: auto;
   font-family: $heading-font-family;
   font-weight: 400;
   // font-weight: inherit;
