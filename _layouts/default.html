@@ -49,8 +49,7 @@
 		  });
 		</script>		
 		<script type="text/javascript">			
-			let navTop = document.getElementById("navTop");	
-			// let navIcon = document.getElementById("mobileNavIcon");			
+			let navTop = document.getElementById("navTop");				
 			document.getElementById('mobileNavIcon').onclick = function(){
 		      document.body.classList.toggle("showMenu"); 		      
 		      navTop.classList.toggle("navShow");
@@ -64,6 +63,23 @@
 			false);
 		</script>
 		{% endif %}
+	    <script type="text/javascript">
+	      if (navigator.serviceWorker) {
+  			navigator.serviceWorker.register('/sw.js').then(function(reg) {
+			      if (!reg.installing) return;
+			      console.log("[*] ServiceWorker is installing...");
+			      var worker = reg.installing;
+			      worker.addEventListener('statechange', function() {
+			          if (worker.state == 'redundant') {
+			              console.log('[*] Install failed');
+			          }
+			          if (worker.state == 'installed') {
+			              console.log('[*] Install successful!');
+			          }
+			      });
+			  });
+			}
+	    </script>
 	</body>
 
 </html>

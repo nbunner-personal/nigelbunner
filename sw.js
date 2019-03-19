@@ -5,17 +5,15 @@ layout: null
 var urlsToCache = [
     '/',
     '/css/nb-styles.css',
+    '/img/nigel-walking--sm-mobile.jpg',
+    '/img/nigel-walking--lg-mobile.jpg',
+    '/img/nigel-walking--tablet.jpg',
+    '/img/nigel-walking--desktop.jpg',
 ];
 
-// Cache assets
-{% for asset in site.static_files %}
-    {% if asset.path contains '/img' or asset.extname == '.css' %}
-    urlsToCache.push("{{ file.path }}")
-    {% endif %}
-{% endfor %}
 
 // Cache posts
-{% for post in site.posts %}
+{% for post in site.posts limit:5 %}
   urlsToCache.push("{{ post.url }}")
 {% endfor %}
 
@@ -24,39 +22,37 @@ var urlsToCache = [
   urlsToCache.push("{{ page.url }}")
 {% endfor %}
 
+var CACHE_NAME = 'nigelbunner-cache-v2';
 
+self.addEventListener("install", function(e){
+  self.skipWaiting();
 
-var CACHE_NAME = 'nigelbunner-cache-v1';
-
-self.addEventListener('install', function (event) {
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then(function (cache) {
-                return cache.addAll(urlsToCache);
-            })
-    );
+  e.waitUntil(
+    caches.open(staticCacheName).then(function(cache){
+      return cache.addAll(filesToCache);
+    })
+  )
 });
 
-self.addEventListener('fetch', function (event) {
-    event.respondWith(
-        caches.open(CACHE_NAME).then(function (cache) {
-            return cache.match(event.request).then(function (response) {
-                return response || fetch(event.request).then(function (response) {
-                    cache.put(event.request, response.clone());
-                    return response;
-                });
-            });
+self.addEventListener("activate", function(e){
+  e.waitUntil(
+    caches.keys().then(function(cacheNames){
+      return Promise.all(
+        cacheNames.filter(function(cacheName){
+          return cacheName.startsWith("gdad-s-river-static-")
+            && cacheName != staticCacheName;
+        }).map(function(cacheName){
+          return caches.delete(cacheName);
         })
-    );
+      )
+    })
+  )
 });
 
-self.addEventListener('fetch', function (event) {
-    event.respondWith(
-        caches.open(CACHE_NAME).then(function (cache) {
-            return fetch(event.request).then(function (response) {
-                cache.put(event.request, response.clone());
-                return response;
-            });
-        })
-    );
+self.addEventListener("fetch", function(e){
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
+  )
 });
