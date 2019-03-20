@@ -1,28 +1,24 @@
 ---
 layout: null
 ---
+const staticCacheName = 'nigelbunner-cache-v3';
 
-var urlsToCache = [
+const filesToCache = [
     '/',
     '/css/nb-styles.css',
     '/img/nigel-walking--sm-mobile.jpg',
     '/img/nigel-walking--lg-mobile.jpg',
     '/img/nigel-walking--tablet.jpg',
-    '/img/nigel-walking--desktop.jpg',
+    '/img/nigel-walking--desktop.jpg',  
+    {% for post in site.posts limit:5 %}
+      '{{ post.url }}',
+    {% endfor %}
+    {% for page in site.html_pages %}
+      '{{ page.url }}',
+    {% endfor %}
 ];
 
 
-// Cache posts
-{% for post in site.posts limit:5 %}
-  urlsToCache.push("{{ post.url }}")
-{% endfor %}
-
-// Cache pages
-{% for page in site.html_pages %}
-  urlsToCache.push("{{ page.url }}")
-{% endfor %}
-
-var CACHE_NAME = 'nigelbunner-cache-v2';
 
 self.addEventListener("install", function(e){
   self.skipWaiting();
