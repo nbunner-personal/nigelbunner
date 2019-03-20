@@ -1,10 +1,9 @@
 ---
 layout: null
 ---
-const staticCacheName = 'nigelbunner-cache-v3';
+const staticCacheName = 'nigelbunner-cache-v4';
 
-const filesToCache = [
-    '/', 
+const filesToCache = [    
     {% for post in site.posts limit:5 %}
       '{{ post.url }}',
     {% endfor %}
