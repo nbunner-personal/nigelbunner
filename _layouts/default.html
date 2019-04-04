@@ -27,7 +27,7 @@
 				
 			</main>
 
-			<footer class="footer footer--page" role="contentinfo">
+			<footer class="footer footer--main" role="contentinfo">
 
 				<div id="inner-footer" class="wrap clearfix">
 
@@ -55,12 +55,16 @@
 		      navTop.classList.toggle("navShow");
 			}			
 		</script>
-		{% if page.useVideo2 %}
+		{% if page.useVideo == true %}
 		<script type="text/javascript">
-			let v = document.querySelectorAll('.videoPlayer');
-			v.addEventListener('click', function() { 
-				}, 
-			false);
+			const v = document.getElementsByClassName('videoPlayer');
+			function updateVideo() {				
+				const id = this.id.replace('vid-','');
+				this.innerHTML = '<iframe src="//www.youtube.com/embed/' + id + '?autoplay=1" width="560" height="315" frameborder="0" allowfullscreen></iframe>';								
+			}			
+			for (i = 0; i < v.length; i++) {
+			    v[i].addEventListener("click", updateVideo);
+			}
 		</script>
 		{% endif %}
 	    <script type="text/javascript">

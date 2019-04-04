@@ -5,6 +5,7 @@ date: 2019-01-08 21:00
 tags: [running]
 hero: running-through-leaves
 thumb: running-through-leaves.jpg
+useVideo: true
 description: Some techniques and tips I have picked up on how to improve your running form, including faster cadence and shorter stride length.
 ---
 
@@ -101,12 +102,19 @@ Many people suggest barefoot running on grass but unless the grass is very short
 ## Example videos
 Here are a couple of videos that help demonstrate some of the points I’ve mentioned. 
 
-
-<iframe width="300" height="169" src="https://www.youtube.com/embed/xec_am8o0Ow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube-static-image.html youtubeId="xec_am8o0Ow" %}
 *A short video by [Champions Everywhere](https://www.championseverywhere.com) about simple methods to improve your technique.*
 
-<iframe width="300" height="169" src="https://www.youtube.com/embed/zSIDRHUWlVo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% include youtube-static-image.html youtubeId="zSIDRHUWlVo" %}
 *A much longer video from [The Natural Running Center](https://naturalrunningcenter.com), but one of the best and most comprehensive on showing you how to improve your running style.*
+
+
+<!-- <iframe width="300" height="169" src="https://www.youtube.com/embed/xec_am8o0Ow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+
+<!-- <iframe width="300" height="169" src="https://www.youtube.com/embed/zSIDRHUWlVo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
 
 Everybody’s body is slightly different so If you want advice specific to you here are a couple of places you can go to. 
 

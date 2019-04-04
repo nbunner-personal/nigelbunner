@@ -50,9 +50,12 @@ body.showMenu {
 
 }
 
-.footer {
-	background: #fff; text-align: center;
+.footer {	
 	p {margin: 12px auto;}
+}
+.footer--main {
+	text-align: center;
+	border-top: 1px solid darken(#f3f6f7,20%);
 }
 .footer--page {
 	align-content: center;

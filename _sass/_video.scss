@@ -1,5 +1,4 @@
 .embed-responsive {
-  position: relative;
   display: block;
   height: 0;
   padding: 0;  
@@ -21,3 +20,8 @@
   padding-bottom: 56.25%;
   margin-bottom: 30px;
 }
+.video-player {
+  max-width: 640px;
+  position: relative;
+}
+.video-player__btn {color: #fff; font-size: 72px; left: 50%; margin: -33px 0 0 -44px; position: absolute;  text-shadow: 0 1px 1px darken(#74C5E0, 10%); top: 50%;}
