@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-const staticCacheName = 'nigelbunner-cache-v5.8';
+const staticCacheName = 'nigelbunner-cache-v5.9';
 
 const filesToCache = [    
     {% for post in site.posts limit:5 %}

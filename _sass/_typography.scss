@@ -180,7 +180,7 @@ h2, .h2, h3, .h3, h4, .h4 {
 article {
   p, ul {font-size: 1.05em;}
 }
-.post-content p:first-child {
+.post-content > p:first-child {
   font-size: 1.1em;
 }
 
@@ -188,7 +188,7 @@ article {
   article {
     p, ul {font-size: 1.05em}
   }
-  .post-content p:first-child {
+  .post-content > p:first-child {
     font-size: 1.2em;
   }
 }
@@ -197,7 +197,7 @@ article {
   article {
     p, ul {font-size: 1.1em}
   }
-  .post-content p:first-child {
+  .post-content > p:first-child {
     font-size: 1.3em;
   }
 }
