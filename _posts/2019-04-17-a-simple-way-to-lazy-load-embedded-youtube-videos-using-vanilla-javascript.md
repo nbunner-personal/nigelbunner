@@ -16,7 +16,7 @@ To recap, lazy loading of videos is a technique where you replace a video on you
 Here is the HTML for our player:
 
 ```html
-<div class="youtube-container home-youtube-container embed-responsive embed-responsive-16by9 embed-responsive-item videoPlayer" id="vid-ijo0I2xD9gM">
+<div class="youtube-container home-youtube-container embed-responsive embed-responsive-item videoPlayer" id="vid-ijo0I2xD9gM">
   <div class="homeVideoThumbnail video-player">
     <img src="//img.youtube.com/vi/ijo0I2xD9gM/0.jpg" alt="YouTube video" />
     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="video-player__btn homeVideoPlayButton"
@@ -50,7 +50,7 @@ Here is the CSS used to style the youtube image before the video is loaded:
 ```css
 .embed-responsive {
   display: block;
-  height: 0;
+  margin-bottom: 12px;
   padding: 0;  
 }
 .embed-responsive .embed-responsive-item,
@@ -68,7 +68,7 @@ Here is the CSS used to style the youtube image before the video is loaded:
   
 }
 .embed-responsive-16by9 {
-  margin-bottom: 30px;
+  height: 0;
   padding-bottom: 56.25%;  
 }
 .video-player {
@@ -96,6 +96,7 @@ Here’s the Javascript. Remember, this is just Vanilla Javascript which means t
 const v = document.getElementsByClassName('videoPlayer');
     function updateVideo() {                
         const id = this.id.replace('vid-','');
+        this.classList.add("embed-responsive-16by9"); // adds responsive styling to the video iframe via a css class
         this.innerHTML = 
             '<iframe src="//www.youtube.com/embed/' 
             + id 
@@ -159,4 +160,4 @@ You can see an example of this code below and on my recent blog post about runni
 If you like the music in the video below feel free to download the album and share it using the links on my [Sugardrum website](https://sugardrum.com/listen/).
 
 {% include youtube-static-image.html youtubeId="ijo0I2xD9gM" %}
-*Bubbleclouds by Sugardrum. From the album Postcards, available to stream from <a href="https://itunes.apple.com/gb/album/postcards/id1081336392" target="_blank">Apple Music</a>, <a href="//open.spotify.com/album/3SowuTWPQwJf2ndygPUfUv" target="_blank">Spotify</a> and download/buy from [Bandcamp](https://sugardrum.bandcamp.com/album/postcards)*
+*Bubble Clouds by Sugardrum. From the album Postcards, available to stream from <a href="https://itunes.apple.com/gb/album/postcards/id1081336392" target="_blank">Apple Music</a>, <a href="//open.spotify.com/album/3SowuTWPQwJf2ndygPUfUv" target="_blank">Spotify</a> and download/buy from [Bandcamp](https://sugardrum.bandcamp.com/album/postcards)*

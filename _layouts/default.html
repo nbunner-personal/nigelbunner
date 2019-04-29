@@ -60,6 +60,7 @@
 			const v = document.getElementsByClassName('videoPlayer');
 			function updateVideo() {				
 				const id = this.id.replace('vid-','');
+				this.classList.add("embed-responsive-16by9");
 				this.innerHTML = '<iframe src="//www.youtube.com/embed/' + id + '?autoplay=1" width="560" height="315" frameborder="0" allowfullscreen></iframe>';								
 			}			
 			for (i = 0; i < v.length; i++) {
@@ -67,7 +68,7 @@
 			}
 		</script>
 		{% endif %}
-	    <script type="text/javascript">
+	    <!-- <script type="text/javascript">
 	      if (navigator.serviceWorker) {
   			navigator.serviceWorker.register('/sw.js').then(function(reg) {
 			      if (!reg.installing) return;
@@ -83,7 +84,7 @@
 			      });
 			  });
 			}
-	    </script>
+	    </script> -->
 	</body>
 
 </html>
