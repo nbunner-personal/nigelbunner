@@ -1,12 +1,12 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+
 @import "variables";
 @import "reset";
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-
 
 @import "typography";
 @import "navigation";
@@ -18,24 +18,20 @@
 @import "video";
 @import "forms";
 
-
 body {
-  // background-attachment: fixed;  
+  // background-attachment: fixed;
   // background-image: url(/img/bird-in-sky-back-2.jpg);
   // background-position: bottom 18em;
   // background-repeat: no-repeat;
   // background-size: cover;
   // -moz-background-size: cover;
   // -webkit-background-size: cover;
-  // color: darken(#80878c, 10%);  
+  // color: darken(#80878c, 10%);
   // font-size: 16px;
   // margin: 0;
   // padding: 0;
 }
 
-
 // .home #main {background: #fff url(/img/nigel_bw_photo-blurred.jpg) 0 0 no-repeat; background-size: cover;}
-
-
 
 // .nav li {margin: 8px 0;}
