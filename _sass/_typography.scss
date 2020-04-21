@@ -44,7 +44,7 @@ h1 {
   h1 {
     font-size: 2.5em;
     /* 2.5x body copy size = 40px */
-    line-height: 1.125;
+    line-height: 1.325;
   }
 }
 
@@ -219,11 +219,12 @@ article {
   article {
     p,
     ul {
-      font-size: 1.1em;
+      font-size: 1.2em;
+      line-height: 1.5;
     }
   }
   .post-content > p:first-child {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 }
 
@@ -295,3 +296,7 @@ pre code {
 // // h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 // //   margin-top: 60px;
 // // }
+
+.article-header h2 {
+  line-height: 1.525;
+}
