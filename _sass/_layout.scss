@@ -36,7 +36,9 @@ article.cont {
   display: flex;
   flex-direction: column;
 }
-// .content {background: #fff;}
+.content {
+  background: #fff;
+}
 
 body.showMenu {
   // main, footer {position: fixed;}
