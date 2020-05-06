@@ -62,7 +62,7 @@ The Cave Co-operative specialise in Sustainable Architecture. They came up with 
 
 Website for the Bafta award winning film composer.
 
-**Tech:** Wordpress, LESS, jQuery
+**Tech:** Jekyll, LESS, jQuery
 
 [![matthewjameskelly.co.uk](img/portfolio-screenshots/mjk.jpg)](http://www.matthewjameskelly.co.uk "Visit www.matthewjameskelly.co.uk")
 
