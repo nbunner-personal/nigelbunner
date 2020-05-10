@@ -38,6 +38,10 @@ h1 {
   /* 2x body copy size = 32px */
   line-height: 1.25;
   /* 45px / 36px */
+  span {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1%, #f2f2f2 99%);
+    display: inline;
+  }
 }
 
 @media (min-width: 43.75em) {
@@ -202,6 +206,14 @@ article {
 .post-content > p:first-child {
   font-size: 1.1em;
 }
+.post-content,
+.entry-content {
+  ul,
+  li,
+  p {
+    max-width: 700px;
+  }
+}
 
 @media (min-width: 43.75em) {
   article {
@@ -299,4 +311,16 @@ pre code {
 
 .article-header h2 {
   line-height: 1.525;
+}
+.list-unstyled {
+  &,
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.entry-content article:first-child h2 {
+  margin-top: 0;
 }

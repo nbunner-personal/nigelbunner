@@ -4,9 +4,8 @@ currentPage: home
 title: Music, design and stories by Nigel Bunner
 ---
 
-
-
 {% for post in site.posts offset: 0 limit: 5 %}
+
 <article class="post">	
 	<header class="article-header"><h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2></header>
 	<div class="post-meta-top">
@@ -32,7 +31,3 @@ title: Music, design and stories by Nigel Bunner
 	<p>{{ post.content | strip_html | truncatewords:75 }}&hellip; <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>	
 </article>  
 {% endfor %}
-
-
-
-

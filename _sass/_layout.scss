@@ -16,7 +16,7 @@ body {
 }
 
 .hero-banner {
-  background: rgba(255, 255, 255, 0.7);
+  // background: rgba(255, 255, 255, 0.7);
   margin: 12px;
   padding: 8px;
 }
@@ -68,6 +68,9 @@ body.showMenu {
   justify-content: center;
   margin-top: auto;
 }
+.footer--post {
+  margin-top: 4em;
+}
 
 // .main-footer {border-top: 1px solid #f3f3f3; max-width: 900px; padding: 30px 0 15px;}
 
@@ -85,8 +88,8 @@ body.showMenu {
     // aside {background-position: 50% -150px; min-height: 260px;}
   }
   body {
-    background-image: url(/img/nigel-walking--lg-mobile.jpg);
-    background-position: 0 17rem;
+    background-image: url(/img/nigel-walking--tablet.jpg);
+    background-position: 0 0;
     background-size: auto auto;
   }
   .hero-banner {
@@ -106,9 +109,9 @@ body.showMenu {
   // aside, .home aside {background: rgba(255,255,255,0.8); border-right: 1px solid #f3f3f3; height: 100%; left: 0; position: fixed; top: 0; width: 14em;}
   // main {min-height: 650px; max-width: 900px; padding: 30px 40px;}
   // .footer {text-align: left;}
-  body {
-    background-image: url(/img/nigel-walking--tablet.jpg);
-  }
+  // body {
+  //   background-image: url(/img/nigel-walking--tablet.jpg);
+  // }
   .content {
     margin-left: 114px;
     max-width: 724px;
@@ -116,17 +119,24 @@ body.showMenu {
 }
 
 @media only screen and (min-width: 1024px) {
-  // body {padding-left: 20em;}
-  // aside, .home aside {width: 20em;}
+  .content {
+    max-width: 800px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   body {
     background-image: none;
   }
+  // .container {
+  //   background-image: url(/img/nigel-walking--desktop.jpg);
+  //   background-attachment: fixed;
+  //   background-position: 0 70%;
+  //   background-repeat: no-repeat;
+  //   background-size: 80%;
+  // }
   main {
     margin: 0 auto;
-    max-width: 1200px;
   }
   article.cont {
     display: grid;
@@ -135,8 +145,8 @@ body.showMenu {
     grid-template-rows: [body] auto [footer] auto;
     grid-template-columns: [sidebar] 342px [content] 724px;
   }
-  .article-header {
-  }
+  // .article-header {
+  // }
   .hero-banner {
     background: url(/img/nigel-walking--desktop.jpg) 0 0 no-repeat;
     grid-row: body;
@@ -152,6 +162,15 @@ body.showMenu {
   .footer--post {
     grid-row: footer;
     grid-column: content;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  article.cont {
+    grid-template-columns: [sidebar] 342px [content] 800px;
+  }
+  .content {
+    max-width: 800px;
   }
 }
 
