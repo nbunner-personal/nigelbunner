@@ -7,10 +7,9 @@ useVideo: false
 description: Some tips I’ve picked up from working from home over the past few years, including posture, keeping to a schedule and background music. 
 ---
 
+It seems like more and more companies are realising that working from home can be just as, if not more productive than commuting into an office everyday. 
 
-# 7 tips for working from home 
-
-It seems like more and more companies are realising that working from home can be just as, if not more productive than commuting into an office everyday. I’ve worked from home for a few years now and have picked up a number of tips on the way. Seeing as more and more of us are now doing this, I thought I’d share some of the tips I’ve picked up over the past few years. 
+I’ve worked from home for a few years now and have picked up a number of tips on the way. Seeing as more and more of us are now doing this, I thought I’d share some of the tips I’ve picked up over the past few years. 
 
 - Ergonomics and posture
 - Designate a space just for work
