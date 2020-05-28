@@ -1,7 +1,8 @@
 .embed-responsive {
-  display: block;  
+  display: block;
   margin-bottom: 12px;
-  padding: 0;  
+  padding: 0;
+  position: relative;
 }
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
@@ -15,21 +16,21 @@
   position: absolute;
   top: 0;
   width: 100%;
-  
 }
 .embed-responsive-16by9 {
-  height: 0;  
-  padding-bottom: 56.25%;  
+  height: 0;
+  padding-bottom: 56.25%;
 }
 .video-player {
   max-width: 640px;
   position: relative;
 }
 .video-player__btn {
-  color: #fff; 
-  font-size: 72px; 
-  left: 50%; 
-  margin: -33px 0 0 -44px; 
-  position: absolute; 
-  text-shadow: 0 1px 1px darken(#74C5E0, 10%); 
-  top: 50%;}
+  color: #fff;
+  font-size: 72px;
+  left: 50%;
+  margin: -33px 0 0 -44px;
+  position: absolute;
+  text-shadow: 0 1px 1px darken(#74c5e0, 10%);
+  top: 50%;
+}
