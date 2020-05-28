@@ -199,7 +199,8 @@ h4,
 
 article {
   p,
-  ul {
+  ul,
+  ol {
     font-size: 1.05em;
   }
 }
@@ -209,6 +210,7 @@ article {
 .post-content,
 .entry-content {
   ul,
+  ol,
   li,
   p {
     max-width: 700px;
@@ -218,7 +220,8 @@ article {
 @media (min-width: 43.75em) {
   article {
     p,
-    ul {
+    ul,
+    ol {
       font-size: 1.05em;
     }
   }
@@ -230,7 +233,8 @@ article {
 @media (min-width: 56.25em) {
   article {
     p,
-    ul {
+    ul,
+    ol {
       font-size: 1.2em;
       line-height: 1.5;
     }

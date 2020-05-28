@@ -12,13 +12,13 @@ description: Some tips I’ve picked up from working from home over the past few
 
 It seems like more and more companies are realising that working from home can be just as, if not more productive than commuting into an office everyday. I’ve worked from home for a few years now and have picked up a number of tips on the way. Seeing as more and more of us are now doing this, I thought I’d share some of the tips I’ve picked up over the past few years. 
 
-1. Ergonomics and posture
-2. Designate a space just for work
-3. Pomorodo technique
-4. Keep a schedule
-5. What music or background noise to use
-6. Communication
-7. Footwear
+- Ergonomics and posture
+- Designate a space just for work
+- Pomorodo technique
+- Keep a schedule
+- What music or background noise to use
+- Communication
+- Footwear
 
 
 ## Ergonomics and posture
@@ -72,7 +72,7 @@ This is something that isn’t exclusive to working from home but can be really 
 
 From Wikipedia...
 
-	The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. 
+> The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. 
 
 If you are having trouble staying focused give the Pomodoro Technique a go. By working in short 20-25 minute bursts and then having a proper short break it can really help with getting focussed. 
 
