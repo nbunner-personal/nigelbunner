@@ -31,3 +31,7 @@ title: Music, design and stories by Nigel Bunner
 	<p>{{ post.content | strip_html | truncatewords:75 }}&hellip; <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>	
 </article>  
 {% endfor %}
+
+<footer class="footer footer--post">  
+  <p><a href="/blog/page/2/">View more posts...</a></p>
+</footer>
