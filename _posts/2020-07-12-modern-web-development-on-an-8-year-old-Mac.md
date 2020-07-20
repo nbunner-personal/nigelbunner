@@ -7,7 +7,7 @@ useVideo: false
 description: Is it really possible to do modern web development on an 8 year old Mac? read on to find out the pros and cons of such a setup. 
 --- 
 
-There’s a question that often gets asked on computer and web development forums.  Is the current,cheapest Mac laptop going to be powerful enough for web development? Usually the computer in question is something like the 2019 MacBook Air. 
+There’s a question that often gets asked on computer and web development forums.  Is the current, cheapest Mac laptop going to be powerful enough for web development? Usually the computer in question is something like the 2019 MacBook Air. 
 
 Common questions include:
 
@@ -59,12 +59,12 @@ The 11” non retina screen doesn’t prove to be too much of a problem for me, 
 
 That said, I usually plug whatever laptop I’m working on into a 32” external monitor. This is non Retina, but large enough to allow me to view my IDE on one side of the screen and a web browser on the other. 
 
-When I’m working on just the laptop screen I run each app use the full width of the smaller screen and switch between apps using command tab. 
+When I’m working on just the laptop screen I run each app using the full width of the smaller screen and switch between apps using command tab. 
 
 ## Future MacOS support
 One thing to note is that Apple has followed a pattern in the last couple of years where they have dropped support for Macs over 7 years old. That means that I won’t be able to upgrade to [Mac OS Big Sur](https://www.apple.com/macos/big-sur-preview/) when it comes out later in the year. 
 
-This affects hardware support too, so If something goes wrong with the hardware then I’ll need to take it to a 3rd party supplier to fix it instead of Apple. 
+This affects hardware support too, so If something goes wrong with the hardware then I’ll need to take it to a 3rd party supplier to be fixed instead of Apple. 
 
 That’s not too big an issue as it will still receive security updates for a number of years to come, just something to bear in mind. 
 
