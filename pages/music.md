@@ -5,6 +5,12 @@ currentPage: music
 permalink: /music.html
 ---
 
+I currently have 2 music project on the go. Sugardrum, which is vocals and acoustic guitar based and Jigsaw Goldrush which is more piano and electronica.
+
+## Jigsaw Goldrush
+I currently have one album of piano music that has been used for meditation and hypno-birthing. You can find more info at the [Jigsaw Goldrush website](https://www.jigsawgoldrush.com).
+
+## Sugardrum
 I write storytelling songs and perform them on vocals and acoustic guitar under the name Sugardrum. I've been doing this for about 10 years or so and have released a number of EPs and an album. Here's some offical blurb from my press pack:
 
 >Sugardrum is singer and multi-instrumentalist Nigel Bunner, who writes and performs acoustic stories. To date he has self-released 5 EPs, the three most recent receiving airplay at both BBC 6music and BBC South.
