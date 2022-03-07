@@ -27,9 +27,9 @@ My own site, created as a personal project to showcase my music. Recently conver
 
 This is one of the charity websites I work on for gratis. I was responsible for the redesign, coding and restructuring of the site, using an existing logo design and the subsequenting rebranding of the site after the charity changed their name.
 
-I'm currently in the process of converting this to a GatsbyJS site using NetlifyCMS as the admin.
+This was recently updated to a GatsbyJS site using Sanity as a headless CMS.
 
-**Tech:** Design, Wordpress, LESS, jQuery
+**Tech:** Design, GatsbyJS, Sanity
 
 [![africanvision.org.uk](img/portfolio-screenshots/africanvision.jpg)](http://www.africanvision.org.uk/ "Visit www.africanvision.org.uk")
 
@@ -47,17 +47,6 @@ This is an older site that I recently converted to use GatsbyJS. I liked the sli
 
 ## Websites I have just coded up
 
-
-### [www.cave.coop](http://www.cave.coop/ "Visit www.cave.coop")
-
-The Cave Co-operative specialise in Sustainable Architecture. They came up with some nice design ideas for the site such as a general style guide for the colour and typography and prepared most of the main images themselves. I helped them with the overal layout, coding the site and putting all our ideas together in to a responsive design.
-
-**Tech:** Design, Wordpress, LESS, jQuery
-
-[![cave.com](img/portfolio-screenshots/cave.jpg)](http://www.cave.coop/ "Visit www.cave.coop")
-
-
-
 ### [www.matthewjameskelly.co.uk](http://www.matthewjameskelly.co.uk "Visit www.matthewjameskelly.co.uk")
 
 Website for the Bafta award winning film composer.
@@ -65,8 +54,6 @@ Website for the Bafta award winning film composer.
 **Tech:** Jekyll, LESS, jQuery
 
 [![matthewjameskelly.co.uk](img/portfolio-screenshots/mjk.jpg)](http://www.matthewjameskelly.co.uk "Visit www.matthewjameskelly.co.uk")
-
-
 
 ### [www.unionsoundset.com](http://www.unionsoundset.com "Visit www.unionsoundset.com")
 
@@ -77,13 +64,4 @@ Responsive holding page for the UK post-rock band.
 [![unionsoundset.com](img/portfolio-screenshots/uss.jpg)](http://www.unionsoundset.com "Visit www.unionsoundset.com")
 
 
-### [www.earthsong.co.uk](http://www.earthsong.co.uk/ "Visit www.earthsong.co.uk")
-
-Earthsong provide multicultural workshops for schools. The website proved to be quite a challenge at first as the design they provided was mainly image based. Fortunately I was able to prevent the load time from becoming too slow by merging most of the images into sprites and streamlining the code as much as posible.
-
-I recently converted it to a static Jekyll based site to help it load even faster.
-
-**Tech:** Sass, Jekyll
-
-[![earthsong.co.uk](img/portfolio-screenshots/earthsong.jpg)](http://www.earthsong.co.uk/ "Visit www.earthsong.co.uk")
 
