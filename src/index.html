@@ -1,0 +1,13 @@
+---
+layout: page-index
+currentPage: home
+title: Music, design and stories by Nigel Bunner
+---
+{%- assign latestPosts = collections.posts | reverse -%}
+{% for post in latestPosts limit: 5 %}
+{% include "post-summary.html" %}
+{% endfor %}
+
+<footer class="footer footer--post">
+  <p><a href="/blog/page/2/">View more posts...</a></p>
+</footer>

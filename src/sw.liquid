@@ -1,0 +1,62 @@
+---
+permalink: /sw.js
+eleventyExcludeFromCollections: true
+---
+const staticCacheName = "nigelbunner-cache-v6.0";
+
+const filesToCache = [
+{%- assign latestPosts = collections.posts | reverse %}
+{%- for post in latestPosts limit: 5 %}
+  "{{ post.url }}",
+{%- endfor %}
+  "/",
+  "/blog/",
+  "/about-me.html",
+  "/contact-me.html",
+  "/music.html",
+  "/stories.html",
+  "/web-portfolio.html",
+  "/glossary/",
+  "/css/nb-styles.css",
+  "/img/nigel-walking--sm-mobile.jpg",
+  "/img/nigel-walking--tablet.jpg",
+  "/img/nigel-walking--desktop.jpg",
+];
+
+self.addEventListener("install", (e) => {
+  self.skipWaiting();
+  e.waitUntil(caches.open(staticCacheName).then((cache) => cache.addAll(filesToCache)));
+});
+
+self.addEventListener("activate", (e) => {
+  e.waitUntil(
+    caches.keys().then((cacheNames) =>
+      Promise.all(
+        cacheNames
+          .filter((name) => name.startsWith("nigelbunner-cache-") && name !== staticCacheName)
+          .map((name) => caches.delete(name))
+      )
+    )
+  );
+});
+
+self.addEventListener("fetch", (e) => {
+  if (e.request.method !== "GET") return;
+
+  // Pages: try the network first so new posts show up, fall back to the cache offline.
+  if (e.request.mode === "navigate") {
+    e.respondWith(
+      fetch(e.request)
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(staticCacheName).then((cache) => cache.put(e.request, copy));
+          return response;
+        })
+        .catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
+  // Everything else (CSS, images): cache first.
+  e.respondWith(caches.match(e.request).then((response) => response || fetch(e.request)));
+});
