@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{%- assign previousPost = collections.posts | getPreviousCollectionItem: page -%}
+{%- assign nextPost = collections.posts | getNextCollectionItem: page -%}
+<article class="post cont" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="article-header hero-banner">
+    <h1 itemprop="name headline"><span>{{ title }}</span></h1>
+    <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+    {%- if site.reading_time %}
+    <p class="entry-reading-time">
+      {% include "reading-time-icon.svg" %}
+      <span class="reading-time" title="Estimated read time">{{ content | readingTime }}</span>
+    </p>
+    {%- endif %}
+  </header>
+
+  <section class="content post-content" itemprop="articleBody">
+    {{ content }}
+  </section>
+
+  <footer class="footer footer--post">
+    {%- assign tagLinks = "" %}
+    {%- for postTag in tags %}
+      {%- assign tagInfo = blogTags | where: "slug", postTag | first %}
+      {%- if tagInfo %}
+        {%- capture link %}<a href="/blog/tag/{{ tagInfo.slug }}/">{{ tagInfo.name }}</a>{% endcapture %}
+        {%- if tagLinks != "" %}{% assign tagLinks = tagLinks | append: ", " %}{% endif %}
+        {%- assign tagLinks = tagLinks | append: link %}
+      {%- endif %}
+    {%- endfor %}
+    {%- if tagLinks != "" %}
+    <p class="footer__meta">
+      <svg width="17" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" aria-label="Tags"><path d="M576 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91z"/></svg>: {{ tagLinks }}
+    </p>
+    {%- endif %}
+    <ul class="nav nav-pills nav-justified list-unstyled">
+      {%- if previousPost %}
+      <li><a class="prev" href="{{ previousPost.url }}">&laquo; {{ previousPost.data.title }}</a></li>
+      {%- endif %}
+      {%- if nextPost %}
+      <li><a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }} &raquo;</a></li>
+      {%- endif %}
+    </ul>
+  </footer>
+</article>

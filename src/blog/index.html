@@ -1,0 +1,38 @@
+---
+layout: page
+currentPage: blog
+title: Blog
+pagination:
+  data: collections.posts
+  size: 5
+  reverse: true
+  alias: posts
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
+---
+{% for post in posts %}
+{% include "post-summary.html" %}
+{% endfor %}
+
+{%- if pagination.pages.size > 1 %}
+<ul class="pagination">
+  {%- if pagination.href.previous %}
+  <li><a href="{{ pagination.href.previous }}">&laquo; Prev</a></li>
+  {%- else %}
+  <li><span aria-hidden="true">&laquo; Prev</span></li>
+  {%- endif %}
+
+  {%- for pageEntry in pagination.pages %}
+  {%- if forloop.index0 == pagination.pageNumber %}
+  <li class="active"><span aria-current="page">{{ forloop.index }}</span></li>
+  {%- else %}
+  <li><a href="{{ pagination.hrefs[forloop.index0] }}">{{ forloop.index }}</a></li>
+  {%- endif %}
+  {%- endfor %}
+
+  {%- if pagination.href.next %}
+  <li><a href="{{ pagination.href.next }}">Next &raquo;</a></li>
+  {%- else %}
+  <li><span aria-hidden="true">Next &raquo;</span></li>
+  {%- endif %}
+</ul>
+{%- endif %}

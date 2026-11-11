@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{%- assign tagPosts = collections[tag.slug] | reverse -%}
+<article class="post cont">
+  <header class="article-header hero-banner">
+    <h1><span>Articles by tag &quot;{{ tag.name }}&quot;</span></h1>
+  </header>
+
+  <section class="content entry-content clearfix">
+    {%- if tagPosts.size > 0 %}
+    {%- assign currentYear = "" %}
+    {%- for post in tagPosts %}
+      {%- assign postYear = post.date | date: "%Y" %}
+      {%- if postYear != currentYear %}
+        {%- unless forloop.first %}</ul>{% endunless %}
+    <h2>{{ postYear }}</h2>
+    <ul class="list-unstyled">
+        {%- assign currentYear = postYear %}
+      {%- endif %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {%- if forloop.last %}
+    </ul>
+      {%- endif %}
+    {%- endfor %}
+    {%- else %}
+    <p>There are no posts in this tag.</p>
+    {%- endif %}
+  </section>
+</article>

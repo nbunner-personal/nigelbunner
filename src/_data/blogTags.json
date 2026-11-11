@@ -1,0 +1,16 @@
+[
+  { "slug": "coding", "name": "Coding" },
+  { "slug": "css", "name": "CSS" },
+  { "slug": "javascript", "name": "JavaScript" },
+  { "slug": "jekyll", "name": "Jekyll" },
+  { "slug": "jquery", "name": "jQuery" },
+  { "slug": "music", "name": "Music" },
+  { "slug": "photos", "name": "Photos" },
+  { "slug": "running", "name": "Running" },
+  { "slug": "tips", "name": "Tips" },
+  { "slug": "travel", "name": "Travel" },
+  { "slug": "videos", "name": "Videos" },
+  { "slug": "webdesign", "name": "Web Design" },
+  { "slug": "writing", "name": "Writing" },
+  { "slug": "youtube", "name": "Youtube" }
+]

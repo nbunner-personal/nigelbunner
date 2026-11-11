@@ -1,0 +1,10 @@
+---
+pagination:
+  data: blogTags
+  size: 1
+  alias: tag
+permalink: "/blog/tag/{{ tag.slug }}/"
+layout: blog_by_tag
+eleventyComputed:
+  title: "Articles by tag \"{{ tag.name }}\""
+---
