@@ -36,7 +36,7 @@ nav {
   padding-right: 24px;
   text-align: right;
   a {
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--color-menu-bg);
     display: block;
     padding: 6px 12px;
     margin-bottom: 2px;
@@ -68,7 +68,7 @@ body.showMenu {
 }
 
 .nav__icon--bars {
-  color: #4a4a4a;
+  color: var(--color-icon);
   cursor: pointer;
   display: block;
   height: 3.25rem;

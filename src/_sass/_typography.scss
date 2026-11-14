@@ -41,7 +41,7 @@ h1 {
   line-height: 1.25;
   /* 45px / 36px */
   span {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1%, #f2f2f2 99%);
+    background: linear-gradient(180deg, transparent 1%, var(--color-h1-highlight) 99%);
     display: inline;
   }
 }
@@ -156,12 +156,12 @@ body {
   // font-weight: 400;
   // line-height: 1.45;
   // color: #333;
-  color: #494949;
+  color: var(--color-text);
 }
 
 a:link,
 a:visited {
-  color: #3a7f96;
+  color: var(--color-link);
   text-decoration: none;
 }
 
@@ -179,13 +179,13 @@ h3,
 .h3,
 h4,
 .h4 {
-  color: #494949;
+  color: var(--color-heading);
   font-display: auto;
   font-family: $heading-font-family;
   font-weight: 400;
   a:link,
   a:visited {
-    color: #3a7f96;
+    color: var(--color-link);
   }
   // font-weight: inherit;
   // line-height: 1.2;
@@ -274,6 +274,7 @@ code {
 }
 pre {
   // only apply for code blocks
+  border: 1px solid var(--color-code-border);
   overflow: auto;
   padding: 8px;
 }

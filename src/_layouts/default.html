@@ -40,12 +40,37 @@
             {% include "nav.html" %}
           </nav>
 
+          <p class="theme-switch">
+            <input type="checkbox" id="theme-toggle" class="theme-toggle__input" autocomplete="off">
+            <label for="theme-toggle" class="theme-toggle">
+              <span class="theme-toggle__to-dark">Dark mode</span>
+              <span class="theme-toggle__to-light">Light mode</span>
+            </label>
+          </p>
+
           <p class="source-org copyright">
             &copy; {{ 'now' | date: "%Y" }} - {{ site.description }}
           </p>
         </div>
       </footer>
     </div>
+    <script>
+      // Theme toggle: flip to the opposite of whatever is showing and remember it.
+      // The checkbox is kept unticked so the no-JS :has() fallback stays out of the way.
+      (function () {
+        var input = document.getElementById("theme-toggle");
+        var root = document.documentElement;
+        input.checked = false;
+        input.addEventListener("change", function () {
+          var current = root.getAttribute("data-theme") ||
+            (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          var next = current === "dark" ? "light" : "dark";
+          input.checked = false;
+          window.nbSetTheme(next);
+          try { localStorage.setItem("theme", next); } catch (e) {}
+        });
+      })();
+    </script>
     <script>
       (function () {
         var navTop = document.getElementById("navTop");

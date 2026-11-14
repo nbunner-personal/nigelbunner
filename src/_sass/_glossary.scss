@@ -1,5 +1,5 @@
 .glossary_list {
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid var(--color-rule);
   margin-top: 30px;
   padding-top: 30px;
 }
@@ -13,14 +13,14 @@
 }
 .glossary_list a:link,
 .glossary_list a:visited {
-  background: #3274a0;
-  color: #fff;
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
 .glossary_list a:hover,
 .glossary_list a:visited:hover,
 .glossary_list a:focus,
 .glossary_list a:visited:focus {
-  background: #5e94b8;
-  color: #fff;
+  background: var(--color-tag-bg-hover);
+  color: var(--color-tag-text);
 }

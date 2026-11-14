@@ -14,18 +14,18 @@
     padding: 10px 12px;
     margin-left: -1px;
     line-height: 1.42857143;
-    color: #337ab7;
+    color: var(--color-link);
     text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-rule);
   }
   & > li > a:focus,
   & > li > a:hover,
   & > li > span:focus,
   & > li > span:hover {
     z-index: 2;
-    color: #23527c;
-    background-color: #eee;
-    border-color: #ddd;
+    color: var(--color-link-hover);
+    background-color: var(--color-surface-hover);
+    border-color: var(--color-rule);
   }
 }

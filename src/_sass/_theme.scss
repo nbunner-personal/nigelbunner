@@ -1,0 +1,133 @@
+// Colour themes.
+//
+// Every colour on the site comes from a CSS variable defined here. The page
+// follows the visitor's system setting (prefers-color-scheme), and the
+// "Light mode / Dark mode" toggle in the footer overrides it.
+//
+// With JavaScript (the normal case): clicking the toggle sets
+// data-theme="dark|light" on <html> and saves the choice in localStorage.
+// A script in head.html reapplies it before the page paints, so the choice
+// sticks across pages with no flash. See default.html for the click handler.
+//
+// Without JavaScript: the toggle is a plain hidden checkbox, and when it's
+// ticked :has() swaps the variables to the opposite theme for that page.
+// Idea from https://www.freecodecamp.org/news/how-to-build-a-dark-mode-toggle-without-javascript/
+
+@mixin light-theme {
+  color-scheme: light;
+  --color-bg: #f3f6f7;
+  --color-surface: #fff;
+  --color-surface-hover: #eee;
+  --color-text: #494949;
+  --color-heading: #494949;
+  --color-nav-link: #333;
+  --color-icon: #4a4a4a;
+  --color-link: #35788f;
+  --color-link-hover: #23527c;
+  --color-border: #f3f3f3;
+  --color-rule: #dee2e6;
+  --color-footer-border: #b6c8ce;
+  --color-quote-border: #bdd2d7;
+  --color-menu-bg: rgba(255, 255, 255, 0.8);
+  --color-h1-highlight: #f2f2f2;
+  --color-tag-bg: #3274a0;
+  --color-tag-bg-hover: #457ba0;
+  --color-tag-text: #fff;
+  // Code blocks are dark in both themes, so only need an edge in dark mode.
+  --color-code-border: transparent;
+  // Laid over the background photo; see _layout.scss.
+  --photo-overlay: transparent;
+  // Which toggle label to show: in light mode, offer "Dark mode".
+  --show-in-light: inline;
+  --show-in-dark: none;
+}
+
+@mixin dark-theme {
+  color-scheme: dark;
+  --color-bg: #12171a;
+  --color-surface: #1b2226;
+  --color-surface-hover: #263035;
+  --color-text: #d3d9dc;
+  --color-heading: #e8ecee;
+  --color-nav-link: #d3d9dc;
+  --color-icon: #d3d9dc;
+  --color-link: #6fb8cf;
+  --color-link-hover: #9fd3e3;
+  --color-border: #2c363b;
+  --color-rule: #2c363b;
+  --color-footer-border: #34444b;
+  --color-quote-border: #3d5560;
+  --color-menu-bg: rgba(27, 34, 38, 0.92);
+  --color-h1-highlight: #263035;
+  --color-tag-bg: #2b6587;
+  --color-tag-bg-hover: #3a7aa1;
+  --color-tag-text: #fff;
+  --color-code-border: #44535b;
+  --photo-overlay: rgba(18, 23, 26, 0.75);
+  --show-in-light: none;
+  --show-in-dark: inline;
+}
+
+// Default: follow the system setting.
+:root {
+  @include light-theme;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-theme;
+  }
+}
+
+// Toggle ticked: use the opposite of the system setting.
+:root:has(#theme-toggle:checked) {
+  @include dark-theme;
+}
+@media (prefers-color-scheme: dark) {
+  :root:has(#theme-toggle:checked) {
+    @include light-theme;
+  }
+}
+
+// Saved choice, set by JavaScript. The script keeps the checkbox unticked,
+// so the :has() rules above never fight with these.
+:root[data-theme="light"] {
+  @include light-theme;
+}
+:root[data-theme="dark"] {
+  @include dark-theme;
+}
+
+// The toggle itself. The checkbox is visually hidden but still focusable,
+// so keyboard users can tab to it and press Space.
+.theme-toggle__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.theme-toggle {
+  color: var(--color-link);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.theme-toggle__input:focus-visible + .theme-toggle {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+.theme-toggle__to-dark {
+  display: var(--show-in-light);
+}
+.theme-toggle__to-light {
+  display: var(--show-in-dark);
+}
+
+// Inline icons (the reading-time clock, the post tags icon) have no fill of
+// their own, so they would default to black and vanish on the dark surface.
+.entry-reading-time svg,
+.footer__meta svg {
+  fill: currentColor;
+}

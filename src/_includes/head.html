@@ -34,5 +34,22 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3f6f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#12171a" media="(prefers-color-scheme: dark)">
+  <script>
+    // Apply a theme chosen with the footer toggle (see _theme.scss).
+    // Runs here, before the body renders, so there's no flash of the wrong theme.
+    window.nbSetTheme = function (theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      var colour = theme === "dark" ? "#12171a" : "#f3f6f7";
+      var metas = document.querySelectorAll('meta[name="theme-color"]');
+      for (var i = 0; i < metas.length; i++) metas[i].setAttribute("content", colour);
+    };
+    (function () {
+      var saved;
+      try { saved = localStorage.getItem("theme"); } catch (e) {}
+      if (saved === "dark" || saved === "light") window.nbSetTheme(saved);
+    })();
+  </script>
 </head>

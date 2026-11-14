@@ -1,6 +1,6 @@
 body {
-  background-color: #f3f6f7; // #3f88c5
-  background-image: url(/img/nigel-walking--sm-mobile.jpg);
+  background-color: var(--color-bg);
+  background-image: linear-gradient(var(--photo-overlay), var(--photo-overlay)), url(/img/nigel-walking--sm-mobile.jpg);
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -37,7 +37,7 @@ article.cont {
   flex-direction: column;
 }
 .content {
-  background: #fff;
+  background: var(--color-surface);
 }
 
 body.showMenu {
@@ -58,7 +58,7 @@ body.showMenu {
 }
 .footer--main {
   text-align: center;
-  border-top: 1px solid #b6c8ce;
+  border-top: 1px solid var(--color-footer-border);
 }
 .footer--page {
   align-content: center;
@@ -87,7 +87,7 @@ body.showMenu {
     // aside {background-position: 50% -150px; min-height: 260px;}
   }
   body {
-    background-image: url(/img/nigel-walking--tablet.jpg);
+    background-image: linear-gradient(var(--photo-overlay), var(--photo-overlay)), url(/img/nigel-walking--tablet.jpg);
     background-position: 0 0;
     background-size: auto auto;
   }
@@ -109,7 +109,7 @@ body.showMenu {
   // main {min-height: 650px; max-width: 900px; padding: 30px 40px;}
   // .footer {text-align: left;}
   // body {
-  //   background-image: url(/img/nigel-walking--tablet.jpg);
+  //   background-image: linear-gradient(var(--photo-overlay), var(--photo-overlay)), url(/img/nigel-walking--tablet.jpg);
   // }
   .content {
     margin-left: 114px;
@@ -147,7 +147,7 @@ body.showMenu {
   // .article-header {
   // }
   .hero-banner {
-    background: url(/img/nigel-walking--desktop.jpg) 0 0 no-repeat;
+    background: linear-gradient(var(--photo-overlay), var(--photo-overlay)), url(/img/nigel-walking--desktop.jpg) 0 0 no-repeat;
     grid-row: body;
     grid-column: sidebar;
     margin: 0;
