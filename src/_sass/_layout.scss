@@ -165,6 +165,10 @@ body.showMenu {
 }
 
 @media only screen and (min-width: 1280px) {
+  .container {
+    // Match the article grid: 342px sidebar + 1rem gap + 800px content.
+    max-width: calc(342px + 1rem + 800px);
+  }
   article.cont {
     grid-template-columns: [sidebar] 342px [content] 800px;
   }
