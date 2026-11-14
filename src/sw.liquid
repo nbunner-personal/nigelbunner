@@ -2,7 +2,9 @@
 permalink: /sw.js
 eleventyExcludeFromCollections: true
 ---
-const staticCacheName = "nigelbunner-cache-v6.0";
+// The build time is part of the name, so every deploy creates a fresh cache
+// and the old one (with old CSS) is deleted in "activate" below.
+const staticCacheName = "nigelbunner-cache-{{ "now" | date: "%Y%m%d%H%M%S" }}";
 
 const filesToCache = [
 {%- assign latestPosts = collections.posts | reverse %}
