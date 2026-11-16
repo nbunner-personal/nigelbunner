@@ -16,12 +16,8 @@ Below is a selection of sites I've worked on, from my day job to charity and per
 ### [www.cruisecritic.com](https://www.cruisecritic.com/ "Visit www.cruisecritic.com")
 
 One of the world's largest cruise review and planning sites. From 2020 to 2026 I was a core engineer on the product team. I worked on almost every part of the frontend, including search, deals, ship pages, booking, the My Cruise trip planner and site-wide dark mode. I also built shared components for the design system and ran dozens of A/B tests.
- 
 
 **Tech:** Next.js (App Router, Server Components), React, TypeScript, Tailwind CSS, Radix UI, GraphQL, Storybook, Playwright
-
-
-[![Cruise Critic homepage](/img/portfolio-screenshots/cruisecritic.jpg)](https://www.cruisecritic.com/ "Visit www.cruisecritic.com")
 
 
 
@@ -29,7 +25,7 @@ One of the world's largest cruise review and planning sites. From 2020 to 2026 I
 
 ### [www.africanvision.org.uk](https://www.africanvision.org.uk/ "Visit www.africanvision.org.uk")
 
-The website for the charity African Vision Malawi, which I build and maintain as voluntary work. I was responsible for the design, coding and structure of the site, and for rebranding it after the charity changed its name. It is now an Eleventy static site with Markdown content and responsive images, hosted on Netlify.
+The website for the charity African Vision Malawi, which I build and maintain as voluntary work. I was responsible for the design, coding and structure of the site, and for rebranding it after the charity changed its name. The content used to be managed in Sanity CMS, but it is now an Eleventy static site with Markdown content and responsive images, hosted on Netlify.
 
 **Tech:** Design, Eleventy, Markdown, responsive images, Netlify
 
@@ -39,7 +35,7 @@ The website for the charity African Vision Malawi, which I build and maintain as
 
 ### [www.littlemusiclist.com](https://www.littlemusiclist.com/ "Visit www.littlemusiclist.com")
 
-A personal project: an ever-growing collection of music pairings. If you like this song, you might like this other one too. You can read more about how it started in my [Little Music List blog post](/blog/little-music-list/).
+A personal project: an ever-growing collection of music pairings. If you like this song, you might like this other one too. You can read more about how it started in my [Little Music List blog post](/blog/little-music-list/). The pairings used to be managed in Sanity CMS, but they now live in Markdown files in an Eleventy site.
 
 **Tech:** Design, Eleventy, Markdown
 
@@ -49,9 +45,9 @@ A personal project: an ever-growing collection of music pairings. If you like th
 
 ### [www.sugardrum.com](https://www.sugardrum.com/ "Visit www.sugardrum.com")
 
-My own site, created to showcase my music. It started out on WordPress, [moved to Jekyll](/blog/2016/12/09/moving-from-wordpress-to-jekyll/) and has recently been rebuilt with Eleventy.
+My own site, created to showcase my music. It started out on WordPress, [moved to Jekyll](/blog/2016/12/09/moving-from-wordpress-to-jekyll/) and has recently been rebuilt with Eleventy. It is hosted on Amazon S3 and served through CloudFront.
 
-**Tech:** Design, Eleventy, Markdown
+**Tech:** Design, Eleventy, Markdown, AWS S3, CloudFront
 
 [![The Sugardrum homepage](/img/portfolio-screenshots/sugardrum-2026.jpg)](https://www.sugardrum.com/ "Visit www.sugardrum.com")
 
