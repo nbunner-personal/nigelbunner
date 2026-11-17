@@ -1,6 +1,6 @@
 ---
 id: 204
-title: 'Day 6, so that&#8217;s why all the buildings around here look the same..'
+title: 'Day 6, so that’s why all the buildings around here look the same..'
 date: 2011-07-12 21:36:24
 author: Nigel
 layout: post

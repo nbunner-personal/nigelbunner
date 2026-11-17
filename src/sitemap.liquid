@@ -7,7 +7,10 @@ eleventyExcludeFromCollections: true
 {%- for item in collections.sitemap %}
   <url>
     <loc>{{ site.url }}{{ item.url }}</loc>
+    {%- comment %} Only pages with a real date in front matter; others would get the file's checkout time. {% endcomment %}
+    {%- if item.data.date %}
     <lastmod>{{ item.date | date_to_xmlschema }}</lastmod>
+    {%- endif %}
   </url>
 {%- endfor %}
 </urlset>

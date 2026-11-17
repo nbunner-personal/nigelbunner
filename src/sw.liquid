@@ -2,28 +2,28 @@
 permalink: /sw.js
 eleventyExcludeFromCollections: true
 ---
-// The build time is part of the name, so every deploy creates a fresh cache
-// and the old one (with old CSS) is deleted in "activate" below.
-const staticCacheName = "nigelbunner-cache-{{ "now" | date: "%Y%m%d%H%M%S" }}";
+{%- comment -%}
+  Precache: the 5 latest posts, the main section pages, every page in
+  src/pages (except ones excluded from the sitemap), the CSS and hero images.
+{%- endcomment -%}
+{%- assign latestPosts = collections.posts | reverse -%}
+{%- capture urls -%}
+{%- for post in latestPosts limit: 5 -%}{{ post.url }},{%- endfor -%}
+/,/blog/,/glossary/,
+{%- for item in collections.sitemap -%}
+{%- if item.inputPath contains "/src/pages/" -%}{{ item.url }},{%- endif -%}
+{%- endfor -%}
+/css/nb-styles.css,/img/nigel-walking--sm-mobile.jpg,/img/nigel-walking--tablet.jpg,/img/nigel-walking--desktop.jpg
+{%- endcapture %}
+// The version is a hash of the precached URLs and the CSS/image sources, so a
+// new cache (and a re-download) only happens when one of them changes. The old
+// cache is deleted in "activate" below.
+const staticCacheName = "nigelbunner-cache-{{ urls | swVersion }}";
 
-const filesToCache = [
-{%- assign latestPosts = collections.posts | reverse %}
-{%- for post in latestPosts limit: 5 %}
-  "{{ post.url }}",
-{%- endfor %}
-  "/",
-  "/blog/",
-  "/about-me.html",
-  "/contact-me.html",
-  "/music.html",
-  "/stories.html",
-  "/web-portfolio.html",
-  "/glossary/",
-  "/css/nb-styles.css",
-  "/img/nigel-walking--sm-mobile.jpg",
-  "/img/nigel-walking--tablet.jpg",
-  "/img/nigel-walking--desktop.jpg",
-];
+const filesToCache = {{ urls | split: "," | json }};
+
+// Shown when offline and the requested page was never cached.
+const offlineFallback = "/";
 
 self.addEventListener("install", (e) => {
   self.skipWaiting();
@@ -50,11 +50,19 @@ self.addEventListener("fetch", (e) => {
     e.respondWith(
       fetch(e.request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(staticCacheName).then((cache) => cache.put(e.request, copy));
+          // Only cache successful pages, so a 404 or 500 never replaces a good copy.
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(staticCacheName).then((cache) => cache.put(e.request, copy));
+          }
           return response;
         })
-        .catch(() => caches.match(e.request))
+        .catch(() =>
+          caches
+            .match(e.request)
+            .then((cached) => cached || caches.match(offlineFallback))
+            .then((cached) => cached || Response.error())
+        )
     );
     return;
   }

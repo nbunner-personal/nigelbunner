@@ -1,6 +1,6 @@
 ---
 id: 270
-title: 'Thursday Photo &#8211; gas lamp near Green Park'
+title: 'Thursday Photo – gas lamp near Green Park'
 date: 2012-01-12T06:52:23+00:00
 author: Nigel
 layout: post

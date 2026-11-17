@@ -1,6 +1,6 @@
 ---
 id: 225
-title: 'Day 19, in the park again, this time even earlier&#8230;'
+title: 'Day 19, in the park again, this time even earlier…'
 date: 2011-07-25T22:19:05+00:00
 author: Nigel
 layout: post

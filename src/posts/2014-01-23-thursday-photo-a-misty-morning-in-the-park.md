@@ -1,6 +1,6 @@
 ---
 id: 348
-title: 'Thursday photo &#8211; a misty morning in the park'
+title: 'Thursday photo – a misty morning in the park'
 date: 2014-01-23 20:26:00 +00:00
 author: Nigel
 layout: post

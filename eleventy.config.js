@@ -1,8 +1,16 @@
+import { createHash } from "node:crypto";
+import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as sass from "sass";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+
+// Counts the words in a chunk of HTML (used for reading time).
+function wordCount(html = "") {
+  const text = String(html).replace(/<[^>]*>/g, " ").trim();
+  return text ? text.split(/\s+/).length : 0;
+}
 
 export default function (eleventyConfig) {
   // --- Plugins ---------------------------------------------------------------
@@ -27,13 +35,14 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");
 
   // --- Sass ------------------------------------------------------------------
+  // Partials in src/_sass are only pulled in via @use, so keep them out of the
+  // template pipeline but still rebuild when one changes.
+  eleventyConfig.ignores.add("src/_sass/**");
+  eleventyConfig.addWatchTarget("src/_sass/");
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addExtension("scss", {
     outputFileExtension: "css",
     compile(inputContent, inputPath) {
-      // Partials (e.g. _variables.scss) are only pulled in via @use.
-      if (path.basename(inputPath).startsWith("_")) return;
-
       const result = sass.compileString(inputContent, {
         loadPaths: ["src/_sass"],
         style: "compressed",
@@ -52,7 +61,7 @@ export default function (eleventyConfig) {
 
   // --- Collections -----------------------------------------------------------
   eleventyConfig.addCollection("posts", (api) =>
-    api.getFilteredByGlob("src/posts/*").sort((a, b) => a.date - b.date)
+    api.getFilteredByGlob("src/posts/*")
   );
   eleventyConfig.addCollection("glossary", (api) =>
     api
@@ -71,17 +80,39 @@ export default function (eleventyConfig) {
   );
 
   // --- Filters (stand-ins for Jekyll built-ins) --------------------------------
-  eleventyConfig.addFilter("number_of_words", (html = "") => {
-    const text = String(html).replace(/<[^>]*>/g, " ").trim();
-    return text ? text.split(/\s+/).length : 0;
-  });
+  // Escapes text for an HTML attribute, leaving existing entities such as
+  // &#8230; or &amp; alone (Liquid's escape_once misses numeric ones).
+  eleventyConfig.addFilter("attr", (value = "") =>
+    String(value)
+      .replace(/&(?!#\d+;|#x[0-9a-f]+;|[a-z][a-z0-9]*;)/gi, "&amp;")
+      .replace(/"/g, "&quot;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+  );
   eleventyConfig.addFilter("date_to_xmlschema", (date) =>
     new Date(date).toISOString()
   );
   eleventyConfig.addFilter("readingTime", (html = "") => {
-    const words = eleventyConfig.getFilter("number_of_words")(html);
-    const minutes = Math.max(1, Math.floor(words / 180));
+    const minutes = Math.max(1, Math.floor(wordCount(html) / 180));
     return minutes === 1 ? "1 min read" : `${minutes} mins read`;
+  });
+
+  // Short hash for the service worker cache name. It covers the list of
+  // precached URLs plus the files behind the cache-first assets (Sass sources
+  // and the precached images), so the cache only changes when they do.
+  eleventyConfig.addFilter("swVersion", (urls = "") => {
+    const hash = createHash("sha256").update(String(urls));
+    const sassFiles = ["src/css/nb-styles.scss"].concat(
+      readdirSync("src/_sass").sort().map((f) => path.join("src/_sass", f))
+    );
+    const imageFiles = String(urls)
+      .split(",")
+      .filter((url) => url.startsWith("/img/"))
+      .map((url) => path.join("src", url));
+    for (const file of sassFiles.concat(imageFiles)) {
+      hash.update(file).update(readFileSync(file));
+    }
+    return hash.digest("hex").slice(0, 12);
   });
 
   // --- Shortcodes -------------------------------------------------------------

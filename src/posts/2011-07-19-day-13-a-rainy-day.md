@@ -1,6 +1,6 @@
 ---
 id: 219
-title: 'Day 13, a rainy day&#8230;'
+title: 'Day 13, a rainy day…'
 date: 2011-07-19 21:58:01
 author: Nigel
 layout: post

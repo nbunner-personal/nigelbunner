@@ -1,6 +1,6 @@
 ---
 id: 205
-title: 'Day 7, a shadowy self-portrait&#8230;'
+title: 'Day 7, a shadowy self-portrait…'
 date: 2011-07-13 22:14:36
 author: Nigel
 layout: post

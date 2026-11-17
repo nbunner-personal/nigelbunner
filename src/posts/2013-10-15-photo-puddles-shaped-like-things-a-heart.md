@@ -1,6 +1,6 @@
 ---
 id: 383
-title: 'Photo: Puddles shaped like things &#8211; a heart'
+title: 'Photo: Puddles shaped like things – a heart'
 date: 2013-10-15 08:40:33 +00:00
 author: Nigel
 layout: post

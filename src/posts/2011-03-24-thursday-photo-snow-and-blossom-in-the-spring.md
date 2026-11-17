@@ -1,6 +1,6 @@
 ---
 id: 151
-title: 'Thursday Photo &#8211; Snow and Blossom in the Spring'
+title: 'Thursday Photo – Snow and Blossom in the Spring'
 date: 2011-03-24 10:54:45
 author: Nigel
 layout: post

@@ -1,6 +1,6 @@
 ---
 id: 98
-title: 'Recent work&#8230;'
+title: 'Recent work…'
 date: 2011-01-26 18:57:09
 author: Nigel
 layout: post

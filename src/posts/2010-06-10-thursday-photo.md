@@ -1,6 +1,6 @@
 ---
 id: 57
-title: 'Thursday Photo&#8230;'
+title: 'Thursday Photo…'
 date: 2010-06-10 17:55:50
 author: Nigel
 layout: post
