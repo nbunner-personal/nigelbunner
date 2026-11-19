@@ -19,6 +19,7 @@ One of the world's largest cruise review and planning sites. From 2020 to 2026 I
 
 **Tech:** Next.js (App Router, Server Components), React, TypeScript, Tailwind CSS, Radix UI, GraphQL, Storybook, Playwright
 
+[![Cruise Critic homepage](/img/portfolio-screenshots/cruisecritic.jpg)](https://www.cruisecritic.com/ "Visit www.cruisecritic.com")
 
 
 ## Websites I have designed and coded
