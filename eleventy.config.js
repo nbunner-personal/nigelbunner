@@ -97,22 +97,31 @@ export default function (eleventyConfig) {
     return minutes === 1 ? "1 min read" : `${minutes} mins read`;
   });
 
+  // Short hash of a list of source files, used for cache busting.
+  const hashFiles = (files, seed = "") => {
+    const hash = createHash("sha256").update(seed);
+    for (const file of files) hash.update(file).update(readFileSync(file));
+    return hash.digest("hex").slice(0, 12);
+  };
+  const sassFiles = () =>
+    ["src/css/nb-styles.scss"].concat(
+      readdirSync("src/_sass").sort().map((f) => path.join("src/_sass", f))
+    );
+
+  // Adds ?v=<hash of the Sass sources> to the stylesheet URL. The service
+  // worker serves CSS cache-first, so without this the first visit after a
+  // deploy still gets the old CSS from the old cache. A new URL misses it.
+  eleventyConfig.addFilter("cssUrl", (url) => `${url}?v=${hashFiles(sassFiles())}`);
+
   // Short hash for the service worker cache name. It covers the list of
   // precached URLs plus the files behind the cache-first assets (Sass sources
   // and the precached images), so the cache only changes when they do.
   eleventyConfig.addFilter("swVersion", (urls = "") => {
-    const hash = createHash("sha256").update(String(urls));
-    const sassFiles = ["src/css/nb-styles.scss"].concat(
-      readdirSync("src/_sass").sort().map((f) => path.join("src/_sass", f))
-    );
     const imageFiles = String(urls)
       .split(",")
       .filter((url) => url.startsWith("/img/"))
       .map((url) => path.join("src", url));
-    for (const file of sassFiles.concat(imageFiles)) {
-      hash.update(file).update(readFileSync(file));
-    }
-    return hash.digest("hex").slice(0, 12);
+    return hashFiles(sassFiles().concat(imageFiles), String(urls));
   });
 
   // --- Transforms -------------------------------------------------------------

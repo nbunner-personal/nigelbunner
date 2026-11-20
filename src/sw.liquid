@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: true
 {%- for item in collections.sitemap -%}
 {%- if item.inputPath contains "/src/pages/" -%}{{ item.url }},{%- endif -%}
 {%- endfor -%}
-/css/nb-styles.css,/img/walking-hero.jpg,/img/nigel-headshot.jpg,/img/portfolio-screenshots/cruisecritic-786.jpg,/img/portfolio-screenshots/littlemusiclist-2026.jpg,/img/portfolio-screenshots/sugardrum-2026.jpg
+{{ "/css/nb-styles.css" | cssUrl }},/img/walking-hero.jpg,/img/nigel-headshot.jpg,/img/portfolio-screenshots/cruisecritic-786.jpg,/img/portfolio-screenshots/littlemusiclist-2026.jpg,/img/portfolio-screenshots/sugardrum-2026.jpg
 {%- for logo in skillLogos -%},/img/portfolio-logos/{{ logo.file }}{%- if logo.dark -%},/img/portfolio-logos/{{ logo.dark }}{%- endif -%}{%- endfor -%}
 {%- endcapture %}
 // The version is a hash of the precached URLs and the CSS/image sources, so a
