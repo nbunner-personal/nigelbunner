@@ -35,6 +35,9 @@
   --color-tag-text: #fff;
   // Code blocks are dark in both themes, so only need an edge in dark mode.
   --color-code-border: transparent;
+  // Full-width colour band behind the home page Skills section.
+  --color-band: #84a5ad;
+  --color-band-text: #1f2a2e;
   // Laid over the background photo; see _layout.scss.
   --photo-overlay: transparent;
   // Which toggle label to show: in light mode, offer "Dark mode".
@@ -63,6 +66,8 @@
   --color-tag-bg-hover: #3a7aa1;
   --color-tag-text: #fff;
   --color-code-border: #44535b;
+  --color-band: #22393f;
+  --color-band-text: #dfe7ea;
   --photo-overlay: rgba(18, 23, 26, 0.75);
   --show-in-light: none;
   --show-in-dark: inline;

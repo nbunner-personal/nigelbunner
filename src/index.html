@@ -1,13 +1,87 @@
 ---
-layout: page-index
+layout: default
 currentPage: home
 title: Music, design and stories by Nigel Bunner
 ---
-{%- assign latestPosts = collections.posts | reverse -%}
-{% for post in latestPosts limit: 5 %}
-{% include "post-summary.html" %}
-{% endfor %}
+<div class="home-page">
+  <section class="home-hero" aria-labelledby="home-intro">
+    <img
+      class="home-hero__photo"
+      src="/img/walking-hero.jpg"
+      alt="Nigel walking away down a misty country path"
+      width="800"
+      height="776"
+      fetchpriority="high"
+    >
+    <div class="home-hero__intro">
+      <h1 id="home-intro">Hello. I'm a Design &amp; Software Engineer with over 2 decades' worth of experience designing and bringing beautiful <a href="/web-portfolio.html">websites</a> to life.</h1>
+    </div>
+  </section>
 
-<footer class="footer footer--post">
-  <p><a href="/blog/page/2/">View more posts...</a></p>
-</footer>
+  <section class="home-band home-skills" aria-labelledby="skills-heading">
+    <div class="home-skills__box">
+      <h2 id="skills-heading" class="home-skills__heading">Skills</h2>
+      <div class="home-skills__body">
+        <p>I work mainly in TypeScript, React 19 and Next.js (App Router and Server Components), styled with Tailwind, Radix UI, CSS Modules, Styled Components and SASS.</p>
+        <p>I've also built with Vue, Nuxt, Laravel, PHP and enjoy building static sites using Eleventy.</p>
+      </div>
+    </div>
+    <ul class="skill-logos" id="skill-logos" aria-label="Tools and technologies I use">
+      {%- for logo in skillLogos %}
+      <li class="skill-logos__item">
+        <img class="skill-logos__img{% if logo.dark %} skill-logos__img--light{% endif %}" src="/img/portfolio-logos/{{ logo.file }}" alt="" width="48" height="48" loading="lazy">
+        {%- if logo.dark %}
+        <img class="skill-logos__img skill-logos__img--dark" src="/img/portfolio-logos/{{ logo.dark }}" alt="" width="48" height="48" loading="lazy">
+        {%- endif %}
+        <span class="skill-logos__name">{{ logo.name }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    <button type="button" class="skill-logos__toggle" aria-controls="skill-logos" aria-expanded="false" hidden>Show all {{ skillLogos.size }} skills</button>
+    <script>
+      // On small screens, show the first few logos and hide the rest behind a
+      // toggle (see .skill-logos--collapsed in _home.scss). Without JS, all show.
+      (function () {
+        var list = document.getElementById("skill-logos");
+        var toggle = list.nextElementSibling;
+        var moreLabel = toggle.textContent;
+        list.classList.add("skill-logos--collapsed");
+        toggle.hidden = false;
+        toggle.addEventListener("click", function () {
+          var collapsed = list.classList.toggle("skill-logos--collapsed");
+          toggle.setAttribute("aria-expanded", collapsed ? "false" : "true");
+          toggle.textContent = collapsed ? moreLabel : "Show fewer skills";
+        });
+      })();
+    </script>
+  </section>
+
+  <section class="home-band home-examples" aria-labelledby="examples-heading">
+    <div class="home-examples__header">
+      <h2 id="examples-heading">Example websites</h2>
+      <a class="home-examples__more" href="/web-portfolio.html">View portfolio</a>
+    </div>
+    <ul class="home-examples__list">
+      <li>
+        <a href="/web-portfolio.html" title="See more in my web portfolio">
+          <img src="/img/portfolio-screenshots/cruisecritic-786.jpg" alt="The Cruise Critic homepage" width="786" height="490" loading="lazy">
+        </a>
+      </li>
+      <li>
+        <a href="/web-portfolio.html" title="See more in my web portfolio">
+          <img src="/img/portfolio-screenshots/littlemusiclist-2026.jpg" alt="The Little Music List homepage" width="786" height="491" loading="lazy">
+        </a>
+      </li>
+      <li>
+        <a href="/web-portfolio.html" title="See more in my web portfolio">
+          <img src="/img/portfolio-screenshots/sugardrum-2026.jpg" alt="The Sugardrum homepage" width="786" height="491" loading="lazy">
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="home-band home-more" aria-labelledby="more-heading">
+    <h2 id="more-heading" class="home-more__text">I'm also a <a href="/music.html">musician</a><br> and I write <a href="/stories.html">stories</a></h2>
+    <img class="home-more__photo" src="/img/nigel-headshot.jpg" alt="Black and white headshot of Nigel" width="512" height="512" loading="lazy">
+  </section>
+</div>

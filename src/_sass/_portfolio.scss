@@ -26,3 +26,39 @@
     margin-bottom: 3rem;
   }
 }
+
+// --- Web Portfolio: no side photo, content full width within the grid ----------
+body.webPortfolio {
+  background-image: none;
+}
+
+.webPortfolio {
+  // main is centred with auto margins in a flex column at wider sizes, which
+  // would shrink it to its content; make it fill the container instead.
+  main {
+    width: 100%;
+  }
+
+  article.cont {
+    display: block;
+  }
+
+  .hero-banner {
+    background: none;
+    margin: 12px 0 8px;
+    padding: 8px 7.6923%;
+  }
+
+  .content {
+    margin-left: 0;
+    max-width: none;
+    min-height: 0;
+  }
+
+  // Screenshots use the full width; text keeps the site's 700px line length
+  // (see _typography.scss). Markdown wraps each image in a <p>.
+  .entry-content p:has(> a > img),
+  .entry-content p:has(> img) {
+    max-width: none;
+  }
+}

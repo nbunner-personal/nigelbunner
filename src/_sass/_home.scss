@@ -1,0 +1,330 @@
+@use "variables" as *;
+
+// Home page (src/index.html).
+//
+// The home sections stay inside the site's .container grid, but their
+// background colours run the full width of the screen. That's done with
+// border-image: a solid-colour image with `fill`, pushed out 100vw either
+// side. Border-image outset is only painted, never part of the layout, so it
+// can't cause a horizontal scrollbar the way 100vw widths or negative margins
+// can.
+@mixin full-bleed($background) {
+  border-image: $background fill 0 / / 0 100vw;
+}
+
+body.home {
+  background-image: none;
+}
+
+.home-page {
+  --home-gutter: 16px;
+
+  h1,
+  h2 {
+    color: inherit;
+    font-family: $heading-font-family;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+// --- Hero: photo with the intro box laid over it -----------------------------
+// The bottom few rem of the hero use the band colour, so the photo hangs down
+// into the Skills band as in the design.
+.home-hero {
+  --hero-overlap: 3rem;
+  @include full-bleed(
+    linear-gradient(
+      to bottom,
+      transparent calc(100% - var(--hero-overlap)),
+      var(--color-band) 0
+    )
+  );
+  color: var(--color-heading);
+  display: grid;
+  padding: 0 var(--home-gutter);
+}
+
+.home-hero__photo {
+  aspect-ratio: 4 / 3;
+  // Thin off-white frame on the sides and bottom, with rounded bottom corners.
+  border: 2px solid #f6f4ef;
+  border-radius: 0 0 12px 12px;
+  border-top: 0;
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 72%;
+  width: 100%;
+}
+
+.home-hero__intro {
+  background: var(--color-surface);
+  border-radius: 12px;
+  margin: -4rem var(--home-gutter) 0;
+  padding: 1.5rem;
+  position: relative;
+
+  h1 {
+    font-size: clamp(1.4rem, 1rem + 1.5vw, 2.1rem);
+    line-height: 1.3;
+  }
+}
+
+// --- Shared band spacing -------------------------------------------------------
+.home-band {
+  padding: 3rem var(--home-gutter);
+}
+
+// --- Skills --------------------------------------------------------------------
+.home-skills {
+  @include full-bleed(linear-gradient(var(--color-band), var(--color-band)));
+  color: var(--color-band-text);
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+// White box behind the heading and text. Same internal padding as the hero
+// box; content-box sizing keeps the text itself at its 40rem measure.
+.home-skills__box {
+  background: var(--color-surface);
+  border-radius: 12px;
+  box-sizing: content-box;
+  color: var(--color-text);
+  max-width: 40rem;
+  padding: 1.5rem;
+
+  h2 {
+    color: var(--color-heading);
+  }
+}
+
+.home-skills__body {
+  font-family: $heading-font-family;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 1rem;
+
+  p {
+    margin: 0 0 1.25em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.skill-logos {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  list-style: none;
+  margin: 3.5rem 0 0;
+  padding: 0;
+}
+
+.skill-logos__item {
+  align-items: center;
+  background: var(--color-surface);
+  border-radius: 8px;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0.5rem 0.75rem;
+  text-align: center;
+}
+
+.skill-logos__img {
+  height: 40px;
+  width: 40px;
+}
+
+// Logos with black and white versions swap with the theme (see _theme.scss).
+.skill-logos__img--light {
+  display: var(--show-in-light);
+}
+.skill-logos__img--dark {
+  display: var(--show-in-dark);
+}
+
+.skill-logos__name {
+  font-size: 0.8125rem;
+  line-height: 1.2;
+}
+
+// Small screens: three per row, and only the first three rows until the
+// "Show all skills" toggle is pressed. The script that adds the collapsed
+// class lives in src/index.html.
+.skill-logos__toggle {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font-family: $heading-font-family;
+  font-size: 1.125rem;
+  margin: 1.25rem auto 0;
+  padding: 0.5rem 1rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+
+  // display: block above would otherwise override the hidden attribute, and
+  // the button only works once the script in index.html has run.
+  &[hidden] {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .skill-logos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .skill-logos--collapsed .skill-logos__item:nth-child(n + 10) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .skill-logos__toggle {
+    display: none;
+  }
+}
+
+// --- Example websites ----------------------------------------------------------
+.home-examples {
+  @include full-bleed(linear-gradient(var(--color-surface), var(--color-surface)));
+  color: var(--color-heading);
+}
+
+.home-examples__header {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  margin-bottom: 1.5rem;
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.home-examples__more {
+  font-family: $heading-font-family;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.home-examples__list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    aspect-ratio: 16 / 10;
+    border: 1px solid var(--color-rule);
+    display: block;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.2s ease;
+    width: 100%;
+  }
+
+  a:hover img,
+  a:focus-visible img {
+    transform: translateY(-3px);
+  }
+}
+
+// --- Music and stories ---------------------------------------------------------
+.home-more {
+  align-items: center;
+  color: var(--color-heading);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
+  justify-content: center;
+  padding-block: 4rem;
+}
+
+.home-more__text {
+  font-size: clamp(1.6rem, 1.2rem + 1vw, 2rem);
+  line-height: 1.35;
+}
+
+.home-more__photo {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  height: auto;
+  object-fit: cover;
+  width: 180px;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-page {
+    --home-gutter: 24px;
+  }
+
+  // Photo across the right three-quarters, intro box overlapping on the left.
+  .home-hero {
+    // The Skills band colour starts this far up behind the photo.
+    --hero-overlap: calc(3rem + 150px);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    padding-bottom: 0;
+  }
+
+  .home-hero__photo {
+    aspect-ratio: 13 / 10;
+    grid-column: 4 / -1;
+    grid-row: 1;
+  }
+
+  .home-hero__intro {
+    align-self: start;
+    grid-column: 1 / 8;
+    grid-row: 1;
+    margin: 4rem 0 0;
+    padding: 2.5rem;
+  }
+
+  .home-band {
+    padding-block: 4rem;
+  }
+
+  .home-skills__box {
+    padding: 2.5rem;
+  }
+
+  .home-more {
+    padding-block: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-hero__intro {
+    margin-top: 5rem;
+  }
+
+  .home-more__photo {
+    width: 200px;
+  }
+}

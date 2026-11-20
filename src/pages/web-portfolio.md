@@ -5,7 +5,11 @@ currentPage: webPortfolio
 permalink: /web-portfolio.html
 description: Websites designed and built by Nigel Bunner, frontend engineer with over 20 years' experience.
 ---
-I'm a frontend engineer with over 20 years' experience building and designing websites, the last 11 of them at Tripadvisor. I specialise in React, Next.js, TypeScript and Tailwind, and I'm comfortable taking a feature all the way from a Figma design to production, running it as an A/B test and rolling it out.
+I'm a frontend engineer with over 20 years' experience designing and building websites, the last 11 of them at Tripadvisor. I specialise in TypeScript, React 19 and Next.js (App Router and Server Components), styled with Tailwind, Radix UI, CSS Modules, Styled Components or SASS.
+
+I'm used to owning projects from start to finish within a team: shaping the idea with product and design, turning a Figma design into production code, running it as an A/B test and rolling it out to everyone.
+
+I've also built with Vue, Nuxt, Laravel and PHP, and I enjoy making static sites with Eleventy. Along the way I've worked with GraphQL (Apollo Client, gql.tada), TanStack Query, Zustand and Convex, built sites on headless CMSs such as Storyblok, DatoCMS and Sanity, and developed design systems in Storybook. More recently I've been using AI coding tools such as Claude Code to plan, build and review features faster.
 
 Below is a selection of sites I've worked on, from my day job to charity and personal projects. I design and build my own sites with [Eleventy](https://www.11ty.dev/), hand-coding the HTML, CSS and JavaScript.
 

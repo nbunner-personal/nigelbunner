@@ -115,6 +115,35 @@ export default function (eleventyConfig) {
     return hash.digest("hex").slice(0, 12);
   });
 
+  // --- Transforms -------------------------------------------------------------
+  // Open links to other sites in a new tab. Runs on every HTML page, so links
+  // in posts, pages and templates are all covered. Links that already set a
+  // target, and links to this site, are left alone.
+  // The pattern matches a whole <script>, <style> or <pre> block (returned
+  // untouched, so link markup inside code or JS strings is never changed), or
+  // an opening <a> tag, allowing ">" inside quoted attribute values.
+  const externalLinkPattern =
+    /<(script|style|pre)\b[\s\S]*?<\/\1>|<a\s(?:[^>"']|"[^"]*"|'[^']*')*>/gi;
+  eleventyConfig.addTransform("externalLinks", function (content) {
+    if (!this.page.outputPath?.endsWith(".html")) return content;
+    return content.replace(externalLinkPattern, (tag, block) => {
+      if (block) return tag;
+      const href = tag.match(/\shref\s*=\s*(?:"([^"]*)"|'([^']*)')/i)?.slice(1).find((v) => v !== undefined);
+      if (!href || !/^(https?:)?\/\//i.test(href)) return tag;
+      if (/^(https?:)?\/\/(www\.)?nigelbunner\.co\.uk(\/|$)/i.test(href)) return tag;
+      if (/\starget\s*=/i.test(tag)) return tag;
+      const rel = tag.match(/\srel\s*=\s*(?:"([^"]*)"|'([^']*)')/i);
+      if (rel) {
+        const values = new Set((rel[1] ?? rel[2]).split(/\s+/).filter(Boolean));
+        values.add("noopener");
+        tag = tag.replace(rel[0], ` rel="${[...values].join(" ")}"`);
+      } else {
+        tag = tag.replace(/>$/, ' rel="noopener">');
+      }
+      return tag.replace(/>$/, ' target="_blank">');
+    });
+  });
+
   // --- Shortcodes -------------------------------------------------------------
   // Click-to-load YouTube placeholder (wired up by the script in default.html).
   eleventyConfig.addShortcode(

@@ -4,3 +4,15 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Removed glossary entry
+[[redirects]]
+  from = "/glossary/rewrite-rules.html"
+  to = "/glossary/"
+  status = 301
+
+# HTML glossary entry's address was misspelled ("hper")
+[[redirects]]
+  from = "/glossary/hper-text-markup-language.html"
+  to = "/glossary/hyper-text-markup-language.html"
+  status = 301
