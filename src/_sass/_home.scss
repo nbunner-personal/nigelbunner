@@ -304,6 +304,16 @@ body.home {
     grid-row: 1;
     margin: 4rem 0 0;
     padding: 2.5rem;
+
+    // Stays in view while the photo scrolls past, until the Skills box comes
+    // up to meet it, then scrolls away with the page. Sticky stops when the
+    // box's margin edge reaches the bottom of .home-hero; the negative bottom
+    // margin lets it travel on towards the Skills box, stopping 1.5rem short
+    // of it (4rem is .home-band's top padding). It doesn't change the layout,
+    // as the photo sets the height of the hero's row.
+    position: sticky;
+    top: 1.5rem;
+    margin-bottom: calc(-4rem + 1.5rem);
   }
 
   .home-band {
